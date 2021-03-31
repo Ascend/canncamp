@@ -1,37 +1,7 @@
 # canncamp
 
-#### 介绍
-昇腾训练营
-
-#### 软件架构
-软件架构说明
+### 介绍
+作为智能时代的开发者，你希望快速构建智能应用、创造自己的模型、编写独一无二的算子吗？昇腾CANN作为全场景的异构计算架构，通过提供多层次的编程接口，一次满足你所有的开发需求。参加昇腾CANN训练营，一个月上手应用、模型、算子开发，做“全栈”开发者。活动更多详情可参看社区[活动链接](https://bbs.huaweicloud.com/forum/thread-112514-1-1.html)。
 
 
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+昇腾CANN训练营包含一营（应用开发营）、二营（模型开发营）、三营（算子开发营）。后续代码相关的作业，都将通过PR的方式进行提交，具体作业和提交要求可参看每个营下面的README。
