@@ -94,10 +94,6 @@ def main(_):
         init_op = tf.group(tf.local_variables_initializer(), tf.global_variables_initializer())
         sess.run(init_op)
 
-        ## Save graph file
-        # tf.io.write_graph(sess.graph_def, './', 'graph.pbtxt')
-        # tf.logging.info("Write graph pbtxt file.")
-
         train_writer = tf.summary.FileWriter(logdir=os.path.join(FLAGS.result, "train"), graph=sess.graph)
         test_writer = tf.summary.FileWriter(logdir=os.path.join(FLAGS.result, "test"), graph=sess.graph)
 

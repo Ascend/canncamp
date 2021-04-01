@@ -89,10 +89,6 @@ class Model(object):
         opt = tf.train.MomentumOptimizer(
             learning_rate, momentum, use_nesterov=self.config.use_nesterov)
 
-        if self.config.chip == 'npu':
-            from npu_bridge.estimator.npu.npu_optimizer import NPUDistributedOptimizer
-            opt = NPUDistributedOptimizer(opt)
-
         update_ops = tf.get_collection(tf.GraphKeys.UPDATE_OPS) or []
 
         with tf.control_dependencies(update_ops):
