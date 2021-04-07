@@ -19,6 +19,6 @@
 
 - [模型营第2周作业](https://gitee.com/ascend/canncamp/blob/master/training_camp/task_1.md)
 
-- 模型营第3周作业 (待发布)
+- [模型营第3周作业](https://gitee.com/ascend/canncamp/blob/master/training_camp/task_2.md)
 
 - 模型营第4周作业 (待发布)
