@@ -19,6 +19,6 @@
 
 - [算子营第2周作业](https://gitee.com/ascend/canncamp/blob/master/operator_camp/1.md)
 
-- 算子营第3周作业 (待发布)
+- [算子营第3周作业](https://gitee.com/ascend/canncamp/blob/master/operator_camp/2.md)
 
 - 算子营第4周作业 (待发布)
