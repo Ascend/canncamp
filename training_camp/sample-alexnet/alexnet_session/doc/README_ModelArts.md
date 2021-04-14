@@ -12,6 +12,6 @@ ModelArts平台上提供了三种训练开发环境，在这里主要讲解使�
 --train_step=2 \                                        ## Total train steps
 --npu_dump_graph=False \                                ## compute graph
 --npu_dump_data=False \                                 ## dump data for precision
---npu_profiling=False \                                 ## profiling for performance
+--profiling=False \                                     ## profiling for performance
 --npu_auto_tune=False                                   ## auto tune tool 
 ```

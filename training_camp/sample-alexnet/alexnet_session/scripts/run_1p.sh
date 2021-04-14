@@ -19,4 +19,4 @@ python3.7 ${code_dir}/train.py \
         --num_classes=5 \
         --train_step=6 \
         --platform='modelarts' \
-        --npu_profiling=True  2>&1 | tee ${result_dir}/${current_time}_train_npu.log
+        --profiling=True  2>&1 | tee ${result_dir}/${current_time}_train_npu.log

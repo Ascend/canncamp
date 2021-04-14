@@ -10,6 +10,7 @@ PROFILING_DIR=$1
 ## Be careful the $MSPROF_DIR, you may change it on different plateform
 ## arm architecture, `uname -a`
 MSPROF_DIR=/home/HwHiAiUser/Ascend/ascend-toolkit/latest/arm64-linux/toolkit/tools/profiler/profiler_tool/analysis/msprof
+/usr/local/Ascend/ascend-toolkit/latest/x86_64-linux/toolkit/tools/profiler/profiler_tool/analysis/msprof
 ## x86 architecture, `uname -a`
 # MSPROF_DIR=/home/HwHiAiUser/Ascend/ascend-toolkit/latest/x86_64-linux/toolkit/tools/profiler/profiler_tool/analysis/msprof
 

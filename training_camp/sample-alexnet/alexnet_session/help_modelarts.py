@@ -44,7 +44,7 @@ def modelarts_result2obs(FLAGS):
     print("===>>>Copy Event or Checkpoint from modelarts dir:{} to obs:{}".format(FLAGS.result, obs_result_dir))
 
     ## Copy profiling data. Comment this snippets if npu_profiling is off.
-    if FLAGS.npu_profiling:
+    if FLAGS.profiling:
         modelarts_profiling_dir = os.path.join(work_dir, "npu_profiling")
         obs_profiling_dir = os.path.join(FLAGS.obs_dir, 'npu_profiling')
         if not mox.file.exists(obs_profiling_dir):

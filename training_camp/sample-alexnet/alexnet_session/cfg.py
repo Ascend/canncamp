@@ -37,7 +37,7 @@ def make_config(FLAGS):
 
         ## Performance Profiling
         ## refer to link:https://support.huaweicloud.com/Development-tg-cann202training1/atlasprofilingtrain_16_0003.html
-        if FLAGS.npu_profiling:
+        if FLAGS.profiling:
             work_dir = os.getcwd()
             profiling_dir = os.path.join(work_dir, "npu_profiling")
             if not os.path.exists(profiling_dir):

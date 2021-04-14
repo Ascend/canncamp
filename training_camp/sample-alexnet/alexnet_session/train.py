@@ -21,6 +21,10 @@ import tensorflow as tf
 from data import Data
 from model import alexnet
 from cfg import make_config
+from tensorflow.python.client import timeline   
+# 可以单独用它生成 timeline，也可以使用下面两个对象生成 timeline
+from tensorflow.python.profiler import model_analyzer
+from tensorflow.python.profiler import option_builder
 
 flags = tf.flags
 FLAGS = flags.FLAGS
@@ -41,9 +45,9 @@ flags.DEFINE_float("decay_rate", 0.9, "momentum used in optimizer")
 flags.DEFINE_string("resume_path", None, "checkpoint path")
 flags.DEFINE_string("chip", "npu", "Run on which chip, (npu or gpu or cpu)")
 flags.DEFINE_string("platform", "apulis", "Run on linux/apulis/modelarts platform. Modelarts Platform has some extra data copy operations")
+flags.DEFINE_boolean("profiling", False, "profiling for performance or not")
 
-## The following params only useful on NPU chip mode
-flags.DEFINE_boolean("npu_profiling", False, "profiling for performance or not")
+
 
 if FLAGS.chip == 'npu':
     from npu_bridge.npu_init import *
@@ -87,6 +91,14 @@ def main(_):
     tf.summary.scalar('accuracy', accuracy)
     summary_op = tf.summary.merge_all()
 
+    ## gpu profiling configuration
+    if FLAGS.chip.lower() == 'gpu' and FLAGS.profiling:
+        options = tf.RunOptions(trace_level=tf.RunOptions.FULL_TRACE)
+        run_metadata = tf.RunMetadata()
+    else:
+        options = None
+        run_metadata = None
+
     config = make_config(FLAGS)
 
     # start training
@@ -118,7 +130,10 @@ def main(_):
 
                 start = datetime.datetime.now()
                 feed_dict = {x: train_images, y: train_labels}
-                _, train_loss, train_acc, summary = sess.run([optimizer, cost, accuracy, summary_op], feed_dict=feed_dict)
+                _, train_loss, train_acc, summary = sess.run([optimizer, cost, accuracy, summary_op], 
+                                                            feed_dict=feed_dict,
+                                                            options=options,
+                                                            run_metadata=run_metadata)
                 end = datetime.datetime.now()
                 train_deltatime = (end - start).total_seconds() * 1000
                 if batch_count % 30 == 0:
@@ -153,6 +168,13 @@ def main(_):
 
         train_writer.close()
         test_writer.close()
+
+    if FLAGS.chip.lower() == 'gpu' and FLAGS.profiling:
+        work_dir = os.getcwd()
+        timeline_path = os.path.join(work_dir, 'timeline.ctf.json')
+        with open(timeline_path, 'w') as trace_file:
+            trace = timeline.Timeline(step_stats=run_metadata.step_stats)
+            trace_file.write(trace.generate_chrome_trace_format())
 
     if FLAGS.platform.lower() == 'modelarts':
         from help_modelarts import modelarts_result2obs

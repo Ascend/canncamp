@@ -26,5 +26,5 @@ python3.7 ${code_dir}/train.py \
     --train_step=2 \
     --npu_dump_data=False \
     --npu_dump_graph=False \
-    --npu_profiling=False \
+    --profiling=False \
     --npu_auto_tune=False 2>&1 | tee ${code_dir}/${current_time}_train_npu.log

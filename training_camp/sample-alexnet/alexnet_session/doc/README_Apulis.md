@@ -9,6 +9,6 @@
 --train_step=2 \                                        ## Total train steps
 --npu_dump_graph=False \                                ## compute graph
 --npu_dump_data=False \                                 ## dump data for precision
---npu_profiling=False \                                 ## profiling for performance
+--profiling=False \                                     ## profiling for performance
 --npu_auto_tune=False                                   ## auto tune tool 
 ```
