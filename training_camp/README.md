@@ -21,4 +21,4 @@
 
 - [模型营第3周作业](https://gitee.com/ascend/canncamp/blob/master/training_camp/task_2.md)，提交截至时间为4月18号，过期提交不算有效积分了哟。
 
-- [模型营第4周作业] (https://gitee.com/ascend/canncamp/blob/master/training_camp/task_3.md)，提交截至时间为4月24号，过期提交不算有效积分了哟。
+- [模型营第4周作业](https://gitee.com/ascend/canncamp/blob/master/training_camp/task_3.md)，提交截至时间为4月24号，过期提交不算有效积分了哟。
