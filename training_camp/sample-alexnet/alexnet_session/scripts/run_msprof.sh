@@ -9,10 +9,9 @@ PROFILING_DIR=$1
 
 ## Be careful the $MSPROF_DIR, you may change it on different plateform
 ## arm architecture, `uname -a`
-MSPROF_DIR=/home/HwHiAiUser/Ascend/ascend-toolkit/latest/arm64-linux/toolkit/tools/profiler/profiler_tool/analysis/msprof
-/usr/local/Ascend/ascend-toolkit/latest/x86_64-linux/toolkit/tools/profiler/profiler_tool/analysis/msprof
-## x86 architecture, `uname -a`
-# MSPROF_DIR=/home/HwHiAiUser/Ascend/ascend-toolkit/latest/x86_64-linux/toolkit/tools/profiler/profiler_tool/analysis/msprof
+# MSPROF_DIR=/home/HwHiAiUser/Ascend/ascend-toolkit/latest/arm64-linux/toolkit/tools/profiler/profiler_tool/analysis/msprof
+## x86 architecture, `uname -a`     For Ai1S platform
+MSPROF_DIR=/home/HwHiAiUser/Ascend/ascend-toolkit/latest/x86_64-linux/toolkit/tools/profiler/profiler_tool/analysis/msprof
 
 python3.7 ${MSPROF_DIR}/msprof.pyc import -dir ${PROFILING_DIR}
 echo "===>>>[OK] msprof sqlite.\n"
