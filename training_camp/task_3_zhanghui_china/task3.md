@@ -6,6 +6,22 @@
 要求：
 1. 在ModelArts平台上可以正常跑通，NPU利用率不为0，训练迭代次数不限。 【20分】
 
+使用
+
+epoch=5
+
+iteration=5
+
+batch_size=32
+
+img_size=128
+
+等参数进行训练作业。执行结果如下：
+
+![ModelArts训练作业](https://bbs-img.huaweicloud.com/data/forums/attachment/forum/202104/18/090429p8jmgsqddiv9lzqu.png "ModelArts训练作业")
+
+![NPU资源占用情况](https://bbs-img.huaweicloud.com/data/forums/attachment/forum/202104/18/090336bodjnut3wfgnwphl.png "NPU资源占用情况")
+
 
 2. 使用Profiling工具分析网络性能。拿到profiling数据，并在Ai1S环境上使用toolkti工具包中的msprof工具进行算子耗时的简单分析。【10分】
 
