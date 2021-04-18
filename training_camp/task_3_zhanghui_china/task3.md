@@ -22,13 +22,11 @@
 - 3.争取在本地跑通网络:使用PyCharm,选择tensorflow-gpu的conda环境，将数据集文件解压到 dataset目录，调试网络，保证main.py可以跑下去（笔者在这里报了OOM的错误），由于GPU资源所限，转入ModelArts调试处理。
 - 4.修改代码（按照sess.run模式），使其满足在Ascend NPU运行的要求。删除dataset目录下的数据集。将数据集文件传到OBS，代码中增加OBS文件传输到ModelArts环境的部分。
 - 5.使用PyCharm的ModelArts插件，在ModelArts上运行训练作业，并在ModelArts官网的控制台查看资源占用情况，确认训练作业是否用到了NPU。此时跑通后，第一步作业即已完成。
-
 --6.修改代码，增加Profilling采集部分。在代码中增加创建Profiling所需的目录，以及在训练结束后，将Profiling采集结果拷贝回OBS的过程。
 --7.使用PyCharm的ModelArts插件，在ModelArts上运行带Profiling采集的训练作业，并在ModelArts官网的控制台查看资源占用情况。等训练结束后，查看OBS的Profiling目录，并将该目录下载到本地备用。
 --8.等待小助手分配CANN 20.2alpha001-2021-3-1的共享镜像。接受该镜像并依此创建ECS AI1S云服务器。
 --9.将第7步下载的Profiling结果文件上传到云服务器。并编写分析脚本run_msprof.sh.执行该脚本，生成profiling分析结果目录（timeline和summary）。删除云服务器以避免额外扣费。下载带分析结果的profiling目录。
 --10.打开三个csv文件，并按照适当的字段排序，分析算子执行耗时。此时，第二步作业即已完成。
-
 --11.尝试使用比如zip压缩后上传OBS，在运行时解压；采用混合精度模式等方法，试图优化训练耗时。试图通过修改超参让训练收敛等等。。
 
 详情可参见：https://bbs.huaweicloud.com/forum/thread-121645-1-1.html  
