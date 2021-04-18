@@ -10,6 +10,12 @@
 2. 使用Profiling工具分析网络性能。拿到profiling数据，并在Ai1S环境上使用toolkti工具包中的msprof工具进行算子耗时的简单分析。【10分】
 
 
+![AICPU按照compute_times排序](https://bbs-img.huaweicloud.com/data/forums/attachment/forum/202104/18/171805h8k5mwlxohqpqmol.png "AICPU按照compute_times排序")
+
+![op_summary按Task Duration排序](https://bbs-img.huaweicloud.com/data/forums/attachment/forum/202104/18/172013gg2lvrdldadolw5w.png "op_summary按Task Duration排序")
+
+![op_statistic按照TotalTime排序](https://bbs-img.huaweicloud.com/data/forums/attachment/forum/202104/18/172138dy9j8vjdmuzqy3aa.png "op_statistic按照TotalTime排序")
+
 
 3. 根据模型营所学的知识，尽可能的优化训练迭代耗时。 【10分】
 
