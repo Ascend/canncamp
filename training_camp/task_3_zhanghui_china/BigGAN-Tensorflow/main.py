@@ -18,6 +18,7 @@ def parse_args():
     # epoch
     # 作业1用的是5
     # parser.add_argument('--epoch', type=int, default=5, help='The number of epochs to run')
+    #parser.add_argument('--epoch', type=int, default=10, help='The number of epochs to run')
     parser.add_argument('--epoch', type=int, default=5, help='The number of epochs to run')
 
     # iteration ModelArts用 5
@@ -162,7 +163,7 @@ def main():
 
     # 调优尝试
     # 混合精度开关
-    # custom_op.parameter_map["precision_mode"].s = tf.compat.as_bytes("allow_mix_precision")
+    custom_op.parameter_map["precision_mode"].s = tf.compat.as_bytes("allow_mix_precision")
 
     config.graph_options.rewrite_options.remapping = RewriterConfig.OFF  # 必须显式关闭remap
 
