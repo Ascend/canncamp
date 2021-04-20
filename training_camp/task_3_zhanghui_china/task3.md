@@ -35,6 +35,30 @@ img_size=128
 
 3. 根据模型营所学的知识，尽可能的优化训练迭代耗时。 【10分】
 
+优化训练时间，主要从 混合精度 的方式考虑，在main.py增加 混合精度的代码：
+![混合精度](https://images.gitee.com/uploads/images/2021/0420/094501_3f8fd197_5630689.png "混合精度")
+
+对比未实现混合精度前，5个epoch的训练情况如下：
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0420/094615_211bf840_5630689.png "屏幕截图.png")
+
+资源使用情况如下：
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0420/094658_ad7981e0_5630689.png "屏幕截图.png")
+
+耗时57分钟，5个epoch，其中每个epoch的每个iteration耗时如下：
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0420/094755_47c3efe2_5630689.png "屏幕截图.png")
+
+打开混合精度之后，跑10个epoch，训练情况如下：
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0420/094849_03e54702_5630689.png "屏幕截图.png")
+
+资源使用情况如下：
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0420/094927_5ba1182c_5630689.png "屏幕截图.png")
+
+耗时6分37秒，10个epoch，其中每个epoch的每个iteration耗时如下：
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0420/095046_9517e1e7_5630689.png "屏幕截图.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0420/095100_718fc810_5630689.png "屏幕截图.png")
+
+可见，Iteration时间从将近100-200秒，降到了0点几秒-20秒。性能大幅提升。
+
 
 尽可能完善自己源码下的README，描述如何迁移的，做了什么修改/适配以及优化，最终需要提交完整代码PR，方便营长复现你的作业。
 
