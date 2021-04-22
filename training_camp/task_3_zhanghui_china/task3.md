@@ -64,10 +64,27 @@ img_size=128
 训练时资源消耗如下：
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0423/001816_daf8f6fa_5630689.png "屏幕截图.png")
 
-后续的测试文件参见 task3-1.md (由于图片不能超过2M，本文已无法上传文件）
+下载profiling分析结果文件：
 
+AICPU耗时：
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0423/002311_32087c1d_5630689.png "屏幕截图.png")
+OP算子Summary：
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0423/002358_2f86dc7b_5630689.png "屏幕截图.png")
+OP算子statistic:
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0423/002450_2cd6ed59_5630689.png "屏幕截图.png") 
 
+比较AI CPU的在开启混合精度前和开启混合精度后的报告：
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0423/002615_c3033974_5630689.png "屏幕截图.png")
+AI CPU算子的耗时差不多。可以初步判断AI CPU这块对性能影响不大。
 
+比较AI summary在开启混合精度前和开启混合精度后的报告：
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0423/002717_0c9aaf0e_5630689.png "屏幕截图.png")
+未开混合精度时，BatchMatMul算子最耗时，Task Duration长达23716731.23  微秒，将近23秒。一个算子就要跑20多秒，整个拉低了训练的速度。
+而开了混合精度之后，同样的算子BatchMatMul,耗时不过 500-700微秒左右。
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0423/002808_cfcacb5d_5630689.png "屏幕截图.png")
+可见，这个大大的差距使得 开启混合精度后的训练速度得以大幅提高。至于为啥BatchMatMul在开启混合精度前后的耗时差异那么大，就需要算子专家或者钟老师具体分析后告诉我们了。
+
+--------------------------------------------------------------------------------------------------------------
 尽可能完善自己源码下的README，描述如何迁移的，做了什么修改/适配以及优化，最终需要提交完整代码PR，方便营长复现你的作业。
 
 
