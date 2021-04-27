@@ -1,0 +1,25 @@
+2021-04-18 16:49:43 [INFO] [create_runtime_db.py:350] - Create Runtime DB finished!
+2021-04-18 16:49:43 [INFO] [create_rts_track_db.py:182] - start parsing rts track data file: runtime.task_track.0.slice_0
+2021-04-18 16:49:43 [INFO] [create_peripheral_db.py:256] - Create Peripheral DB finished!
+2021-04-18 16:49:43 [INFO] [create_ge_db.py:78] - start parsing ge graph data file: Framework.graph_desc_info.0.slice_0
+2021-04-18 16:49:43 [INFO] [create_ge_db.py:113] - Start to read GE graph data ...
+2021-04-18 16:49:43 [INFO] [time_parser.py:53] - Start parsing sync data ...
+2021-04-18 16:49:43 [INFO] [time_parser.py:56] - Parsing sync data finished...
+2021-04-18 16:49:43 [INFO] [create_ge_db.py:120] - Parsing GE data finished...
+2021-04-18 16:49:43 [INFO] [create_ge_db.py:70] - start parsing ge task data file: Framework.task_desc_info.0.slice_0
+2021-04-18 16:49:43 [INFO] [create_ge_db.py:85] - Start to read GE task data ...
+2021-04-18 16:49:43 [INFO] [create_ge_db.py:105] - Parsing GE task data finished...
+2021-04-18 16:49:44 [INFO] [create_rts_track_db.py:192] - Create rts_track db finished!
+2021-04-18 16:49:44 [INFO] [hwts_record_parser.py:136] - start parsing hwts data file: hwts.data.0.slice_0
+2021-04-18 16:49:44 [INFO] [hwts_record_parser.py:136] - start parsing hwts data file: hwts.data.0.slice_1
+2021-04-18 16:49:44 [INFO] [collection_engine.py:74] - Database process finished.
+2021-04-18 16:49:44 [INFO] [collection_engine.py:75] - Analysis finished.
+2021-04-18 16:49:45 [WARNING] [update_aicore.py:50] - Unable to get required data to update ai core data.
+2021-04-18 16:49:45 [WARNING] [create_ai_core_op_summary_db.py:71] - unable to create ai core metrics table
+2021-04-18 16:49:45 [INFO] [calculate_task_scheduler.py:123] - start insert data into report table
+2021-04-18 16:49:45 [INFO] [top_down_report.py:490] - Start to get top down tracing data.
+2021-04-18 16:49:47 [WARNING] [update_aicore.py:50] - Unable to get required data to update ai core data.
+2021-04-18 16:49:47 [WARNING] [create_ai_core_op_summary_db.py:71] - unable to create ai core metrics table
+2021-04-18 16:49:47 [INFO] [calculate_task_scheduler.py:123] - start insert data into report table
+2021-04-18 16:49:52 [INFO] [top_down_report.py:459] - start to get top down data.
+2021-04-18 16:49:52 [INFO] [top_down_report.py:470] - get top down data finish.
