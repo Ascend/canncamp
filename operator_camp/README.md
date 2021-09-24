@@ -1,24 +1,43 @@
 # Operator Campus
 
 ### 介绍
-昇腾CANN训练营——算子开发营。算子开发营一共有三次课程，每节课程结束时会发布本节课的作业，大家根据发布的作业内容完成对应的作业。
-- 如果涉及代码
-    
-    首先，将[canncamp仓](https://gitee.com/ascend/canncamp)fork到个人分支，基于个人分支在`operator_camp`文件夹下新增自己的工程文件夹。文件夹命名规则为`task_x_华为云账号`；比如：`task_1_lin6413`。
+昇腾CANN训练营(第三期)——算子开发营。算子开发营作业共有两道题目，请大家将代码提交到canncamp仓
 
-    其次，上传源码。将自己的源码添加到新建的文件夹中，删除冗余的代码/文件，完善readme，并更新到自己的个人分支。
-
-    最后，提交PR。在提交PR时，算子营的标题请标注为【昇腾CANN训练营——算子训练营】第x周 课程名称 华为云账号。比如：
-    ```
-    【昇腾CANN训练营——算子训练营】第4周 XXX算子 fulltower
-    ```
     
-- 如果是客观题。请移步到[昇腾论坛](https://bbs.huaweicloud.com/forum/thread-113294-1-1.html)，按要求提交。
+首先，将[canncamp仓](https://gitee.com/ascend/canncamp)fork到个人分支，基于个人分支在`operator_camp`文件夹下新增自己的工程文件夹。文件夹命名规则为`华为云账号`；比如：`fulltower`。
+
+其次，上传源码。将自己的源码添加到新建的文件夹中，删除冗余的代码/文件，完善readme，并更新到自己的个人分支。
+
+最后，提交PR。在提交PR时，算子营的标题请标注为【昇腾CANN训练营第三期——算子训练营】华为云账号。比如：
+```
+【昇腾CANN训练营第三期——算子训练营】fulltower
+```
 
 ### 课程作业
 
-- [算子营第2周作业](https://gitee.com/ascend/canncamp/blob/master/operator_camp/1.md)
+##### 题目一：使用TIK实现element-wise的加法算子
 
-- [算子营第3周作业](https://gitee.com/ascend/canncamp/blob/master/operator_camp/2.md)
+其中：
+输入和输出数据类型都是float16类型，tensor大小为（16,16,16,16,16）。
 
-- [算子营第4周作业](https://gitee.com/ascend/canncamp/blob/master/operator_camp/3.md)
+提交的文件名命名为 **eltwise.py** 。
+
+其逻辑表示为：
+
+```
+for (int i0 = 0; i < 16; i++)
+    for (int i1 = 0; i < 16; i++)
+        for (int i2 = 0; i < 16; i++)
+            for (int i3 = 0; i < 16; i++)
+                for (int i4 = 0; i < 16; i++)
+                    C[i0, i1, i2, i3, i4] = A[i0, i1, i2, i3, i4] + B[i0, i1, i2, i3, i4]
+```
+
+##### 题目二：使用TIK实现softmax算子
+其中：
+需要支持数据类型为float，同时支持任意维度的shape，即算子需要支持泛化能力。
+
+提交的文件名命名为 **softmax.py** 。
+
+
+
