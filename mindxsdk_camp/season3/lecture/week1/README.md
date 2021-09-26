@@ -2,7 +2,12 @@
 
 ### MindX SDK安装
 
-参考昇腾训练营二期应用营[第二周内容](https://gitee.com/kongchibin/ascend_camp/tree/master/lecture/week2)
+```bash
+cd /home/HwHiAiUser/MindX
+mkdir MindXSDK
+chmod +x ./Ascend-mindxsdk-mxvision_2.0.1_linux-x86_64.run
+./Ascend-mindxsdk-mxvision_2.0.1_linux-x86_64.run --install --install-path=MindXSDK
+```
 
 ### deeplabv3模型准备
 
