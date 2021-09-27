@@ -1,14 +1,9 @@
 # Operator Campus
 
 ### 介绍
-昇腾CANN训练营(第三期)——算子开发营。算子开发营作业共有两道题目，请大家将代码提交到canncamp仓
+昇腾CANN训练营(第三期)——算子开发营。算子开发营作业共有两道题目，请大家将代码打包提交到论坛[CANN训练营第三期 · 算子营课程及作业发布](https://bbs.huaweicloud.com/forum/thread-157539-1-1.html)
 
-    
-首先，将[canncamp仓](https://gitee.com/ascend/canncamp)fork到个人分支，基于个人分支在`operator_camp`文件夹下新增自己的工程文件夹。文件夹命名规则为`华为云账号`；比如：`fulltower`。
-
-其次，上传源码。将自己的源码添加到新建的文件夹中，删除冗余的代码/文件，完善readme，并更新到自己的个人分支。
-
-最后，提交PR。在提交PR时，算子营的标题请标注为【昇腾CANN训练营第三期——算子训练营】华为云账号。比如：
+标题参考：
 ```
 【昇腾CANN训练营第三期——算子训练营】fulltower
 ```
