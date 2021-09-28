@@ -40,3 +40,10 @@
 - 不能简单地将输入节点shape设置为512*512，亲测转模型会报错哈
 - 需要对aipp有深入的了解
 
+**备注**
+
+如果转换模型有难度的，可以使用转好的模型
+
+链接：https://pan.baidu.com/s/1MnIh-Knaf8Xfd6e9rqsWaQ 
+提取码：beod
+
