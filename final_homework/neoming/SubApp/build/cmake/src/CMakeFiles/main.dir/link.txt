@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/main.dir/main.cpp.o CMakeFiles/main.dir/utils.cpp.o  -o ../../../out/main  -L/home/ma-user/Ascend/ascend-toolkit/5.0.2.1/acllib/lib64/stub -Wl,-rpath,/home/ma-user/Ascend/ascend-toolkit/5.0.2.1/acllib/lib64/stub: -lascendcl -lstdc++ 

@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/ma-user/work/AscendProjects/SubApp/build/cmake/src",
+  "command": "/usr/bin/c++   -I/home/ma-user/Ascend/ascend-toolkit/5.0.2.1/acllib/include -I/home/ma-user/work/AscendProjects/SubApp/src/../inc    -std=c++11 -o CMakeFiles/main.dir/main.cpp.o -c /home/ma-user/work/AscendProjects/SubApp/src/main.cpp",
+  "file": "/home/ma-user/work/AscendProjects/SubApp/src/main.cpp"
+},
+{
+  "directory": "/home/ma-user/work/AscendProjects/SubApp/build/cmake/src",
+  "command": "/usr/bin/c++   -I/home/ma-user/Ascend/ascend-toolkit/5.0.2.1/acllib/include -I/home/ma-user/work/AscendProjects/SubApp/src/../inc    -std=c++11 -o CMakeFiles/main.dir/utils.cpp.o -c /home/ma-user/work/AscendProjects/SubApp/src/utils.cpp",
+  "file": "/home/ma-user/work/AscendProjects/SubApp/src/utils.cpp"
+}
+]

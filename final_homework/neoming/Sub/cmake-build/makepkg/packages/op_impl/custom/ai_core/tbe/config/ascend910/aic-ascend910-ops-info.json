@@ -1,0 +1,28 @@
+{
+    "Sub":{
+        "input0":{
+            "dtype":"float16,float32",
+            "format":"ND,ND",
+            "name":"x",
+            "paramType":"required"
+        },
+        "input1":{
+            "dtype":"float16,float32",
+            "format":"ND,ND",
+            "name":"y",
+            "paramType":"required"
+        },
+        "opFile":{
+            "value":"sub"
+        },
+        "opInterface":{
+            "value":"sub"
+        },
+        "output0":{
+            "dtype":"float16,float32",
+            "format":"ND,ND",
+            "name":"z",
+            "paramType":"required"
+        }
+    }
+}

@@ -1,0 +1,14 @@
+/home/ma-user/work/AscendProjects/Sub/cmake-build/CMakeFiles/rebuild_cache.dir
+/home/ma-user/work/AscendProjects/Sub/cmake-build/CMakeFiles/custom_opp_Linux_aarch64.run.dir
+/home/ma-user/work/AscendProjects/Sub/cmake-build/CMakeFiles/edit_cache.dir
+/home/ma-user/work/AscendProjects/Sub/cmake-build/framework/CMakeFiles/rebuild_cache.dir
+/home/ma-user/work/AscendProjects/Sub/cmake-build/framework/CMakeFiles/edit_cache.dir
+/home/ma-user/work/AscendProjects/Sub/cmake-build/framework/tf_plugin/CMakeFiles/rebuild_cache.dir
+/home/ma-user/work/AscendProjects/Sub/cmake-build/framework/tf_plugin/CMakeFiles/cust_tf_parsers.dir
+/home/ma-user/work/AscendProjects/Sub/cmake-build/framework/tf_plugin/CMakeFiles/edit_cache.dir
+/home/ma-user/work/AscendProjects/Sub/cmake-build/op_proto/CMakeFiles/rebuild_cache.dir
+/home/ma-user/work/AscendProjects/Sub/cmake-build/op_proto/CMakeFiles/cust_op_proto.dir
+/home/ma-user/work/AscendProjects/Sub/cmake-build/op_proto/CMakeFiles/edit_cache.dir
+/home/ma-user/work/AscendProjects/Sub/cmake-build/tbe/CMakeFiles/rebuild_cache.dir
+/home/ma-user/work/AscendProjects/Sub/cmake-build/tbe/CMakeFiles/config_json.dir
+/home/ma-user/work/AscendProjects/Sub/cmake-build/tbe/CMakeFiles/edit_cache.dir
