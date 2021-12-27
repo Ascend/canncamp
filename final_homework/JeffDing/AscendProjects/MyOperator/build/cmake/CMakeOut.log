@@ -1,0 +1,17 @@
+-- CMAKE_CURRENT_BINARY_DIR=/home/ma-user/AscendProjects/MyOperator/build/cmake
+-- CMAKE_CURRENT_SOURCE_DIR=/home/ma-user/AscendProjects/MyOperator
+-- ASCEND_TENSOR_COMPILER_INCLUDE=/home/ma-user/Ascend/ascend-toolkit/5.0.2.1/atc/include
+-- SYSTEM_NAME=ubuntu
+-- SYSTEM_INFO=ubuntu_aarch64
+-- RUN_TARGET=custom_opp_ubuntu_aarch64.run
+-- OUT_DIR=/home/ma-user/AscendProjects/MyOperator/build/cmake/makepkg
+-- OP_COMMON_INC=
+-- SRCS = ./tensorflow_relu_plugin.cc
+-- OP_PROTO_TARGET=cust_op_proto
+-- OUTPUT_FILES=aic-ascend910-ops-info.json
+-- operation system is Linux
+-- AICPU_CONFIG_INFO_FLAG=
+-- ALL_MODULES=cust_op_proto;config_json;cust_tf_parsers
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ma-user/AscendProjects/MyOperator/build/cmake

@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/ma-user/AscendProjects/MyOperator/build/cmake/framework/tf_plugin",
+  "command": "g++  -D_GLIBCXX_USE_CXX11_ABI=0 -Dcust_tf_parsers_EXPORTS -Dgoogle=ascend_private -I/home/ma-user/Ascend/ascend-toolkit/5.0.2.1/atc/include   -fstack-protector-all -fpic -fpie -D_FORTIFY_SOURCE=2 -O2 -fPIC   -std=gnu++11 -o CMakeFiles/cust_tf_parsers.dir/tensorflow_relu_plugin.cc.o -c /home/ma-user/AscendProjects/MyOperator/framework/tf_plugin/tensorflow_relu_plugin.cc",
+  "file": "/home/ma-user/AscendProjects/MyOperator/framework/tf_plugin/tensorflow_relu_plugin.cc"
+},
+{
+  "directory": "/home/ma-user/AscendProjects/MyOperator/build/cmake/op_proto",
+  "command": "g++  -D_GLIBCXX_USE_CXX11_ABI=0 -Dcust_op_proto_EXPORTS -I/home/ma-user/Ascend/ascend-toolkit/5.0.2.1/atc/include   -fstack-protector-all -fpic -fpie -D_FORTIFY_SOURCE=2 -O2 -fPIC   -std=gnu++11 -o CMakeFiles/cust_op_proto.dir/sqrt.cc.o -c /home/ma-user/AscendProjects/MyOperator/op_proto/sqrt.cc",
+  "file": "/home/ma-user/AscendProjects/MyOperator/op_proto/sqrt.cc"
+}
+]

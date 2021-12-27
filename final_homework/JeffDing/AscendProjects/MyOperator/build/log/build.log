@@ -1,0 +1,767 @@
+2021-12-06 02:15:46 [ INFO ] MyOperator Build Start
+2021-12-06 02:15:46 [ INFO ] -- CMAKE_CURRENT_BINARY_DIR=/home/ma-user/AscendProjects/MyOperator/cmake-build
+2021-12-06 02:15:46 [ INFO ] -- CMAKE_CURRENT_SOURCE_DIR=/home/ma-user/AscendProjects/MyOperator
+2021-12-06 02:15:46 [ INFO ] -- The C compiler identification is GNU 7.5.0
+2021-12-06 02:15:46 [ INFO ] -- The CXX compiler identification is GNU 7.5.0
+2021-12-06 02:15:46 [ INFO ] -- Check for working C compiler: /usr/bin/cc
+2021-12-06 02:15:46 [ INFO ] -- Check for working C compiler: /usr/bin/cc -- works
+2021-12-06 02:15:46 [ INFO ] -- Detecting C compiler ABI info
+2021-12-06 02:15:46 [ INFO ] -- Detecting C compiler ABI info - done
+2021-12-06 02:15:47 [ INFO ] -- Detecting C compile features
+2021-12-06 02:15:47 [ INFO ] -- Detecting C compile features - done
+2021-12-06 02:15:47 [ INFO ] -- Check for working CXX compiler: /usr/bin/c++
+2021-12-06 02:15:47 [ INFO ] -- Check for working CXX compiler: /usr/bin/c++ -- works
+2021-12-06 02:15:47 [ INFO ] -- Detecting CXX compiler ABI info
+2021-12-06 02:15:47 [ INFO ] -- Detecting CXX compiler ABI info - done
+2021-12-06 02:15:47 [ INFO ] -- Detecting CXX compile features
+2021-12-06 02:15:48 [ INFO ] -- Detecting CXX compile features - done
+2021-12-06 02:15:48 [ INFO ] -- ASCEND_TENSOR_COMPILER_INCLUDE=/home/ma-user/Ascend/ascend-toolkit/5.0.2.1/atc/include
+2021-12-06 02:15:48 [ INFO ] -- SYSTEM_INFO=Linux_aarch64
+2021-12-06 02:15:48 [ INFO ] -- RUN_TARGET=custom_opp_Linux_aarch64.run
+2021-12-06 02:15:48 [ INFO ] -- OUT_DIR=/home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg
+2021-12-06 02:15:48 [ INFO ] -- OP_COMMON_INC=
+2021-12-06 02:15:48 [ INFO ] -- SRCS = ./tensorflow_relu_plugin.cc
+2021-12-06 02:15:48 [ INFO ] -- OP_PROTO_TARGET=cust_op_proto
+2021-12-06 02:15:48 [ INFO ] -- OUTPUT_FILES=aic-ascend910-ops-info.json
+2021-12-06 02:15:48 [ INFO ] -- operation system is Linux
+2021-12-06 02:15:48 [ INFO ] -- AICPU_CONFIG_INFO_FLAG=
+2021-12-06 02:15:48 [ INFO ] -- ALL_MODULES=cust_op_proto;config_json;cust_tf_parsers
+2021-12-06 02:15:48 [ INFO ] -- Configuring done
+2021-12-06 02:15:48 [ INFO ] -- Generating done
+2021-12-06 02:15:48 [ INFO ] -- Build files have been written to: /home/ma-user/AscendProjects/MyOperator/cmake-build
+2021-12-06 02:15:48 [ INFO ] Scanning dependencies of target config_json
+2021-12-06 02:15:48 [ INFO ] [ 20%] generate configure json file
+2021-12-06 02:15:48 [ INFO ] python3.7.5 /home/ma-user/AscendProjects/MyOperator/cmake/util/parse_ini_to_json.py /home/ma-user/AscendProjects/MyOperator/tbe/op_info_cfg/ai_core/ascend910/relu.ini  /home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg/packages/op_impl/custom/ai_core/tbe/config/aic-ascend910-ops-info.json
+2021-12-06 02:15:48 [ INFO ] ==============check valid for ops info start==============
+2021-12-06 02:15:48 [ INFO ] ==============check valid for ops info end================
+2021-12-06 02:15:48 [ INFO ] Compile op info cfg successfully.
+2021-12-06 02:15:48 [ INFO ] /home/ma-user/AscendProjects/MyOperator/tbe/op_info_cfg/ai_core /home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg/packages/framework/custom/tensorflow/
+2021-12-06 02:15:48 [ INFO ] [INFO] Succed generated /home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg/packages/framework/custom/tensorflow//npu_supported_ops.json
+2021-12-06 02:15:48 [ INFO ] [ 20%] Built target config_json
+2021-12-06 02:15:48 [ INFO ] Scanning dependencies of target cust_tf_parsers
+2021-12-06 02:15:48 [ INFO ] [ 40%] Building CXX object framework/tf_plugin/CMakeFiles/cust_tf_parsers.dir/tensorflow_relu_plugin.cc.o
+2021-12-06 02:15:49 [ INFO ] [ 60%] Linking CXX shared library ../../makepkg/packages/framework/custom/tensorflow/libcust_tf_parsers.so
+2021-12-06 02:15:49 [ INFO ] [ 60%] Built target cust_tf_parsers
+2021-12-06 02:15:49 [ INFO ] Scanning dependencies of target cust_op_proto
+2021-12-06 02:15:49 [ INFO ] [ 80%] Building CXX object op_proto/CMakeFiles/cust_op_proto.dir/relu.cc.o
+2021-12-06 02:15:49 [ INFO ] [100%] Linking CXX shared library ../makepkg/packages/op_proto/custom/libcust_op_proto.so
+2021-12-06 02:15:49 [ INFO ] [100%] Built target cust_op_proto
+2021-12-06 02:15:49 [ INFO ] Scanning dependencies of target custom_opp_Linux_aarch64.run
+2021-12-06 02:15:49 [ INFO ] /home/ma-user/AscendProjects/MyOperator/tbe/op_info_cfg/ai_core /home/ma-user/AscendProjects/MyOperator/cmake-build/framework/op_info_cfg/ai_core
+2021-12-06 02:15:49 [ INFO ] [INFO] Succed generated /home/ma-user/AscendProjects/MyOperator/cmake-build/framework/op_info_cfg/ai_core/npu_supported_ops.json
+2021-12-06 02:15:49 [ INFO ] Header is 671 lines long
+2021-12-06 02:15:49 [ INFO ] About to compress 160 KB of data...
+2021-12-06 02:15:49 [ INFO ] Adding files to archive named "custom_opp_Linux_aarch64.run"...
+2021-12-06 02:15:49 [ INFO ] ./help.sh
+2021-12-06 02:15:49 [ INFO ] ./install.sh
+2021-12-06 02:15:49 [ INFO ] ./packages/framework/custom/tensorflow/
+2021-12-06 02:15:49 [ INFO ] ./packages/framework/custom/tensorflow/npu_supported_ops.json
+2021-12-06 02:15:49 [ INFO ] ./packages/framework/custom/tensorflow/libcust_tf_parsers.so
+2021-12-06 02:15:49 [ INFO ] ./packages/framework/custom/tensorflow/libcust_tf_parsers.so
+2021-12-06 02:15:49 [ INFO ] ./packages/framework/custom/tensorflow/npu_supported_ops.json
+2021-12-06 02:15:49 [ INFO ] ./packages/fusion_rules/custom/
+2021-12-06 02:15:49 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/config/ascend910/
+2021-12-06 02:15:49 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/config/ascend910/aic-ascend910-ops-info.json
+2021-12-06 02:15:49 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/config/ascend910/aic-ascend910-ops-info.json
+2021-12-06 02:15:49 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/custom_impl/
+2021-12-06 02:15:49 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/custom_impl/relu.py
+2021-12-06 02:15:49 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/custom_impl/relu.py
+2021-12-06 02:15:49 [ INFO ] ./packages/op_impl/custom/cpu/aicpu_kernel/custom_impl/
+2021-12-06 02:15:49 [ INFO ] ./packages/op_impl/custom/vector_core/tbe/custom_impl/
+2021-12-06 02:15:49 [ INFO ] ./packages/op_impl/custom/vector_core/tbe/custom_impl/relu.py
+2021-12-06 02:15:49 [ INFO ] ./packages/op_impl/custom/vector_core/tbe/custom_impl/relu.py
+2021-12-06 02:15:49 [ INFO ] ./packages/op_proto/custom/
+2021-12-06 02:15:49 [ INFO ] ./packages/op_proto/custom/libcust_op_proto.so
+2021-12-06 02:15:49 [ INFO ] ./packages/op_proto/custom/libcust_op_proto.so
+2021-12-06 02:15:49 [ INFO ] ./uninstall.sh
+2021-12-06 02:15:49 [ INFO ] ./upgrade.sh
+2021-12-06 02:15:49 [ INFO ] CRC: 381143847
+2021-12-06 02:15:49 [ INFO ] SHA256: 94fdd3935c2cd9858fd49d42e9c053b372e00328f9520430e11803211e8b325e
+2021-12-06 02:15:49 [ INFO ] Skipping md5sum at user request
+2021-12-06 02:15:49 [ INFO ] Self-extractable archive "custom_opp_Linux_aarch64.run" successfully created.
+2021-12-06 02:15:49 [ INFO ] [100%] Built target custom_opp_Linux_aarch64.run
+2021-12-06 06:22:41 [ INFO ] MyOperator Build Start
+2021-12-06 06:22:41 [ INFO ] -- CMAKE_CURRENT_BINARY_DIR=/home/ma-user/AscendProjects/MyOperator/cmake-build
+2021-12-06 06:22:41 [ INFO ] -- CMAKE_CURRENT_SOURCE_DIR=/home/ma-user/AscendProjects/MyOperator
+2021-12-06 06:22:41 [ INFO ] -- The C compiler identification is GNU 7.5.0
+2021-12-06 06:22:41 [ INFO ] -- The CXX compiler identification is GNU 7.5.0
+2021-12-06 06:22:41 [ INFO ] -- Check for working C compiler: /usr/bin/cc
+2021-12-06 06:22:42 [ INFO ] -- Check for working C compiler: /usr/bin/cc -- works
+2021-12-06 06:22:42 [ INFO ] -- Detecting C compiler ABI info
+2021-12-06 06:22:42 [ INFO ] -- Detecting C compiler ABI info - done
+2021-12-06 06:22:42 [ INFO ] -- Detecting C compile features
+2021-12-06 06:22:42 [ INFO ] -- Detecting C compile features - done
+2021-12-06 06:22:42 [ INFO ] -- Check for working CXX compiler: /usr/bin/c++
+2021-12-06 06:22:42 [ INFO ] -- Check for working CXX compiler: /usr/bin/c++ -- works
+2021-12-06 06:22:42 [ INFO ] -- Detecting CXX compiler ABI info
+2021-12-06 06:22:42 [ INFO ] -- Detecting CXX compiler ABI info - done
+2021-12-06 06:22:42 [ INFO ] -- Detecting CXX compile features
+2021-12-06 06:22:43 [ INFO ] -- Detecting CXX compile features - done
+2021-12-06 06:22:43 [ INFO ] -- ASCEND_TENSOR_COMPILER_INCLUDE=/home/ma-user/Ascend/ascend-toolkit/5.0.2.1/atc/include
+2021-12-06 06:22:43 [ INFO ] -- SYSTEM_INFO=Linux_aarch64
+2021-12-06 06:22:43 [ INFO ] -- RUN_TARGET=custom_opp_Linux_aarch64.run
+2021-12-06 06:22:43 [ INFO ] -- OUT_DIR=/home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg
+2021-12-06 06:22:43 [ INFO ] -- OP_COMMON_INC=
+2021-12-06 06:22:43 [ INFO ] -- SRCS = ./tensorflow_relu_plugin.cc
+2021-12-06 06:22:43 [ INFO ] -- OP_PROTO_TARGET=cust_op_proto
+2021-12-06 06:22:43 [ INFO ] -- OUTPUT_FILES=aic-ascend910-ops-info.json
+2021-12-06 06:22:43 [ INFO ] -- operation system is Linux
+2021-12-06 06:22:43 [ INFO ] -- AICPU_CONFIG_INFO_FLAG=
+2021-12-06 06:22:43 [ INFO ] -- ALL_MODULES=cust_op_proto;config_json;cust_tf_parsers
+2021-12-06 06:22:43 [ INFO ] -- Configuring done
+2021-12-06 06:22:43 [ INFO ] -- Generating done
+2021-12-06 06:22:43 [ INFO ] -- Build files have been written to: /home/ma-user/AscendProjects/MyOperator/cmake-build
+2021-12-06 06:22:43 [ INFO ] Scanning dependencies of target config_json
+2021-12-06 06:22:43 [ INFO ] [ 20%] generate configure json file
+2021-12-06 06:22:43 [ INFO ] python3.7.5 /home/ma-user/AscendProjects/MyOperator/cmake/util/parse_ini_to_json.py /home/ma-user/AscendProjects/MyOperator/tbe/op_info_cfg/ai_core/ascend910/relu.ini  /home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg/packages/op_impl/custom/ai_core/tbe/config/aic-ascend910-ops-info.json
+2021-12-06 06:22:43 [ INFO ] ==============check valid for ops info start==============
+2021-12-06 06:22:43 [ INFO ] ==============check valid for ops info end================
+2021-12-06 06:22:43 [ INFO ] Compile op info cfg successfully.
+2021-12-06 06:22:43 [ INFO ] /home/ma-user/AscendProjects/MyOperator/tbe/op_info_cfg/ai_core /home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg/packages/framework/custom/tensorflow/
+2021-12-06 06:22:43 [ INFO ] [INFO] Succed generated /home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg/packages/framework/custom/tensorflow//npu_supported_ops.json
+2021-12-06 06:22:43 [ INFO ] [ 20%] Built target config_json
+2021-12-06 06:22:43 [ INFO ] Scanning dependencies of target cust_tf_parsers
+2021-12-06 06:22:43 [ INFO ] [ 40%] Building CXX object framework/tf_plugin/CMakeFiles/cust_tf_parsers.dir/tensorflow_relu_plugin.cc.o
+2021-12-06 06:22:44 [ INFO ] [ 60%] Linking CXX shared library ../../makepkg/packages/framework/custom/tensorflow/libcust_tf_parsers.so
+2021-12-06 06:22:44 [ INFO ] [ 60%] Built target cust_tf_parsers
+2021-12-06 06:22:44 [ INFO ] Scanning dependencies of target cust_op_proto
+2021-12-06 06:22:44 [ INFO ] [ 80%] Building CXX object op_proto/CMakeFiles/cust_op_proto.dir/relu.cc.o
+2021-12-06 06:22:44 [ INFO ] [100%] Linking CXX shared library ../makepkg/packages/op_proto/custom/libcust_op_proto.so
+2021-12-06 06:22:44 [ INFO ] [100%] Built target cust_op_proto
+2021-12-06 06:22:44 [ INFO ] Scanning dependencies of target custom_opp_Linux_aarch64.run
+2021-12-06 06:22:45 [ INFO ] /home/ma-user/AscendProjects/MyOperator/tbe/op_info_cfg/ai_core /home/ma-user/AscendProjects/MyOperator/cmake-build/framework/op_info_cfg/ai_core
+2021-12-06 06:22:45 [ INFO ] [INFO] Succed generated /home/ma-user/AscendProjects/MyOperator/cmake-build/framework/op_info_cfg/ai_core/npu_supported_ops.json
+2021-12-06 06:22:45 [ INFO ] Header is 671 lines long
+2021-12-06 06:22:45 [ INFO ] About to compress 160 KB of data...
+2021-12-06 06:22:45 [ INFO ] Adding files to archive named "custom_opp_Linux_aarch64.run"...
+2021-12-06 06:22:45 [ INFO ] ./help.sh
+2021-12-06 06:22:45 [ INFO ] ./install.sh
+2021-12-06 06:22:45 [ INFO ] ./packages/framework/custom/tensorflow/
+2021-12-06 06:22:45 [ INFO ] ./packages/framework/custom/tensorflow/libcust_tf_parsers.so
+2021-12-06 06:22:45 [ INFO ] ./packages/framework/custom/tensorflow/npu_supported_ops.json
+2021-12-06 06:22:45 [ INFO ] ./packages/framework/custom/tensorflow/libcust_tf_parsers.so
+2021-12-06 06:22:45 [ INFO ] ./packages/framework/custom/tensorflow/npu_supported_ops.json
+2021-12-06 06:22:45 [ INFO ] ./packages/fusion_rules/custom/
+2021-12-06 06:22:45 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/config/ascend910/
+2021-12-06 06:22:45 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/config/ascend910/aic-ascend910-ops-info.json
+2021-12-06 06:22:45 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/config/ascend910/aic-ascend910-ops-info.json
+2021-12-06 06:22:45 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/custom_impl/
+2021-12-06 06:22:45 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/custom_impl/relu.py
+2021-12-06 06:22:45 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/custom_impl/relu.py
+2021-12-06 06:22:45 [ INFO ] ./packages/op_impl/custom/cpu/aicpu_kernel/custom_impl/
+2021-12-06 06:22:45 [ INFO ] ./packages/op_impl/custom/vector_core/tbe/custom_impl/
+2021-12-06 06:22:45 [ INFO ] ./packages/op_impl/custom/vector_core/tbe/custom_impl/relu.py
+2021-12-06 06:22:45 [ INFO ] ./packages/op_impl/custom/vector_core/tbe/custom_impl/relu.py
+2021-12-06 06:22:45 [ INFO ] ./packages/op_proto/custom/
+2021-12-06 06:22:45 [ INFO ] ./packages/op_proto/custom/libcust_op_proto.so
+2021-12-06 06:22:45 [ INFO ] ./packages/op_proto/custom/libcust_op_proto.so
+2021-12-06 06:22:45 [ INFO ] ./uninstall.sh
+2021-12-06 06:22:45 [ INFO ] ./upgrade.sh
+2021-12-06 06:22:45 [ INFO ] CRC: 1970000625
+2021-12-06 06:22:45 [ INFO ] SHA256: e2636dba5c02257d2c90785be381530d36528b342208b4c6c712289ecfdb9e6e
+2021-12-06 06:22:45 [ INFO ] Skipping md5sum at user request
+2021-12-06 06:22:45 [ INFO ] Self-extractable archive "custom_opp_Linux_aarch64.run" successfully created.
+2021-12-06 06:22:45 [ INFO ] [100%] Built target custom_opp_Linux_aarch64.run
+2021-12-06 07:56:19 [ INFO ] MyOperator Rebuild Start
+2021-12-06 07:56:19 [ INFO ] -- CMAKE_CURRENT_BINARY_DIR=/home/ma-user/AscendProjects/MyOperator/cmake-build
+2021-12-06 07:56:19 [ INFO ] -- CMAKE_CURRENT_SOURCE_DIR=/home/ma-user/AscendProjects/MyOperator
+2021-12-06 07:56:19 [ INFO ] -- ASCEND_TENSOR_COMPILER_INCLUDE=/home/ma-user/Ascend/ascend-toolkit/5.0.2.1/atc/include
+2021-12-06 07:56:19 [ INFO ] -- SYSTEM_INFO=Linux_aarch64
+2021-12-06 07:56:19 [ INFO ] -- RUN_TARGET=custom_opp_Linux_aarch64.run
+2021-12-06 07:56:19 [ INFO ] -- OUT_DIR=/home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg
+2021-12-06 07:56:19 [ INFO ] -- OP_COMMON_INC=
+2021-12-06 07:56:19 [ INFO ] -- SRCS = ./tensorflow_relu_plugin.cc
+2021-12-06 07:56:19 [ INFO ] -- OP_PROTO_TARGET=cust_op_proto
+2021-12-06 07:56:19 [ INFO ] -- OUTPUT_FILES=aic-ascend910-ops-info.json
+2021-12-06 07:56:19 [ INFO ] -- operation system is Linux
+2021-12-06 07:56:19 [ INFO ] -- AICPU_CONFIG_INFO_FLAG=
+2021-12-06 07:56:19 [ INFO ] -- ALL_MODULES=cust_op_proto;config_json;cust_tf_parsers
+2021-12-06 07:56:19 [ INFO ] -- Configuring done
+2021-12-06 07:56:19 [ INFO ] -- Generating done
+2021-12-06 07:56:19 [ INFO ] -- Build files have been written to: /home/ma-user/AscendProjects/MyOperator/cmake-build
+2021-12-06 07:56:19 [ INFO ] [ 20%] generate configure json file
+2021-12-06 07:56:19 [ INFO ] python3.7.5 /home/ma-user/AscendProjects/MyOperator/cmake/util/parse_ini_to_json.py /home/ma-user/AscendProjects/MyOperator/tbe/op_info_cfg/ai_core/ascend910/relu.ini  /home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg/packages/op_impl/custom/ai_core/tbe/config/aic-ascend910-ops-info.json
+2021-12-06 07:56:19 [ INFO ] ==============check valid for ops info start==============
+2021-12-06 07:56:19 [ INFO ] ==============check valid for ops info end================
+2021-12-06 07:56:19 [ INFO ] Compile op info cfg successfully.
+2021-12-06 07:56:19 [ INFO ] /home/ma-user/AscendProjects/MyOperator/tbe/op_info_cfg/ai_core /home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg/packages/framework/custom/tensorflow/
+2021-12-06 07:56:19 [ INFO ] [INFO] Succed generated /home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg/packages/framework/custom/tensorflow//npu_supported_ops.json
+2021-12-06 07:56:19 [ INFO ] [ 20%] Built target config_json
+2021-12-06 07:56:19 [ INFO ] [ 40%] Building CXX object framework/tf_plugin/CMakeFiles/cust_tf_parsers.dir/tensorflow_relu_plugin.cc.o
+2021-12-06 07:56:19 [ INFO ] [ 60%] Linking CXX shared library ../../makepkg/packages/framework/custom/tensorflow/libcust_tf_parsers.so
+2021-12-06 07:56:19 [ INFO ] [ 60%] Built target cust_tf_parsers
+2021-12-06 07:56:19 [ INFO ] [ 80%] Building CXX object op_proto/CMakeFiles/cust_op_proto.dir/relu.cc.o
+2021-12-06 07:56:20 [ INFO ] [100%] Linking CXX shared library ../makepkg/packages/op_proto/custom/libcust_op_proto.so
+2021-12-06 07:56:20 [ INFO ] [100%] Built target cust_op_proto
+2021-12-06 07:56:20 [ INFO ] /home/ma-user/AscendProjects/MyOperator/tbe/op_info_cfg/ai_core /home/ma-user/AscendProjects/MyOperator/cmake-build/framework/op_info_cfg/ai_core
+2021-12-06 07:56:20 [ INFO ] [INFO] Succed generated /home/ma-user/AscendProjects/MyOperator/cmake-build/framework/op_info_cfg/ai_core/npu_supported_ops.json
+2021-12-06 07:56:20 [ INFO ] Header is 671 lines long
+2021-12-06 07:56:20 [ WARN ] WARNING: Overwriting existing file: custom_opp_Linux_aarch64.run
+2021-12-06 07:56:20 [ INFO ] About to compress 160 KB of data...
+2021-12-06 07:56:20 [ INFO ] Adding files to archive named "custom_opp_Linux_aarch64.run"...
+2021-12-06 07:56:20 [ INFO ] ./help.sh
+2021-12-06 07:56:20 [ INFO ] ./install.sh
+2021-12-06 07:56:20 [ INFO ] ./packages/framework/custom/tensorflow/
+2021-12-06 07:56:20 [ INFO ] ./packages/framework/custom/tensorflow/libcust_tf_parsers.so
+2021-12-06 07:56:20 [ INFO ] ./packages/framework/custom/tensorflow/npu_supported_ops.json
+2021-12-06 07:56:20 [ INFO ] ./packages/framework/custom/tensorflow/libcust_tf_parsers.so
+2021-12-06 07:56:20 [ INFO ] ./packages/framework/custom/tensorflow/npu_supported_ops.json
+2021-12-06 07:56:20 [ INFO ] ./packages/fusion_rules/custom/
+2021-12-06 07:56:20 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/config/ascend910/
+2021-12-06 07:56:20 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/config/ascend910/aic-ascend910-ops-info.json
+2021-12-06 07:56:20 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/config/ascend910/aic-ascend910-ops-info.json
+2021-12-06 07:56:20 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/custom_impl/
+2021-12-06 07:56:20 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/custom_impl/relu.py
+2021-12-06 07:56:20 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/custom_impl/relu.py
+2021-12-06 07:56:20 [ INFO ] ./packages/op_impl/custom/cpu/aicpu_kernel/custom_impl/
+2021-12-06 07:56:20 [ INFO ] ./packages/op_impl/custom/vector_core/tbe/custom_impl/
+2021-12-06 07:56:20 [ INFO ] ./packages/op_impl/custom/vector_core/tbe/custom_impl/relu.py
+2021-12-06 07:56:20 [ INFO ] ./packages/op_impl/custom/vector_core/tbe/custom_impl/relu.py
+2021-12-06 07:56:20 [ INFO ] ./packages/op_proto/custom/
+2021-12-06 07:56:20 [ INFO ] ./packages/op_proto/custom/libcust_op_proto.so
+2021-12-06 07:56:20 [ INFO ] ./packages/op_proto/custom/libcust_op_proto.so
+2021-12-06 07:56:20 [ INFO ] ./uninstall.sh
+2021-12-06 07:56:20 [ INFO ] ./upgrade.sh
+2021-12-06 07:56:20 [ INFO ] CRC: 987014440
+2021-12-06 07:56:20 [ INFO ] SHA256: 0b994cb9adaa9f250efa1621cebbf6382415f90ed3af3fa24988583f59f0c5b6
+2021-12-06 07:56:20 [ INFO ] Skipping md5sum at user request
+2021-12-06 07:56:20 [ INFO ] Self-extractable archive "custom_opp_Linux_aarch64.run" successfully created.
+2021-12-06 07:56:20 [ INFO ] [100%] Built target custom_opp_Linux_aarch64.run
+2021-12-07 02:08:15 [ INFO ] MyOperator Rebuild Start
+2021-12-07 02:08:16 [ INFO ] -- CMAKE_CURRENT_BINARY_DIR=/home/ma-user/AscendProjects/MyOperator/cmake-build
+2021-12-07 02:08:16 [ INFO ] -- CMAKE_CURRENT_SOURCE_DIR=/home/ma-user/AscendProjects/MyOperator
+2021-12-07 02:08:16 [ INFO ] -- The C compiler identification is GNU 7.5.0
+2021-12-07 02:08:16 [ INFO ] -- The CXX compiler identification is GNU 7.5.0
+2021-12-07 02:08:16 [ INFO ] -- Check for working C compiler: /usr/bin/cc
+2021-12-07 02:08:16 [ INFO ] -- Check for working C compiler: /usr/bin/cc -- works
+2021-12-07 02:08:16 [ INFO ] -- Detecting C compiler ABI info
+2021-12-07 02:08:16 [ INFO ] -- Detecting C compiler ABI info - done
+2021-12-07 02:08:16 [ INFO ] -- Detecting C compile features
+2021-12-07 02:08:16 [ INFO ] -- Detecting C compile features - done
+2021-12-07 02:08:16 [ INFO ] -- Check for working CXX compiler: /usr/bin/c++
+2021-12-07 02:08:17 [ INFO ] -- Check for working CXX compiler: /usr/bin/c++ -- works
+2021-12-07 02:08:17 [ INFO ] -- Detecting CXX compiler ABI info
+2021-12-07 02:08:17 [ INFO ] -- Detecting CXX compiler ABI info - done
+2021-12-07 02:08:17 [ INFO ] -- Detecting CXX compile features
+2021-12-07 02:08:17 [ INFO ] -- Detecting CXX compile features - done
+2021-12-07 02:08:17 [ INFO ] -- ASCEND_TENSOR_COMPILER_INCLUDE=/home/ma-user/Ascend/ascend-toolkit/5.0.2.1/atc/include
+2021-12-07 02:08:17 [ INFO ] -- SYSTEM_INFO=Linux_aarch64
+2021-12-07 02:08:17 [ INFO ] -- RUN_TARGET=custom_opp_Linux_aarch64.run
+2021-12-07 02:08:17 [ INFO ] -- OUT_DIR=/home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg
+2021-12-07 02:08:17 [ INFO ] -- OP_COMMON_INC=
+2021-12-07 02:08:17 [ INFO ] -- SRCS = ./tensorflow_relu_plugin.cc
+2021-12-07 02:08:17 [ INFO ] -- OP_PROTO_TARGET=cust_op_proto
+2021-12-07 02:08:17 [ INFO ] -- OUTPUT_FILES=aic-ascend910-ops-info.json
+2021-12-07 02:08:17 [ INFO ] -- operation system is Linux
+2021-12-07 02:08:17 [ INFO ] -- AICPU_CONFIG_INFO_FLAG=
+2021-12-07 02:08:17 [ INFO ] -- ALL_MODULES=cust_op_proto;config_json;cust_tf_parsers
+2021-12-07 02:08:17 [ INFO ] -- Configuring done
+2021-12-07 02:08:17 [ INFO ] -- Generating done
+2021-12-07 02:08:17 [ INFO ] -- Build files have been written to: /home/ma-user/AscendProjects/MyOperator/cmake-build
+2021-12-07 02:08:17 [ INFO ] Scanning dependencies of target config_json
+2021-12-07 02:08:17 [ INFO ] [ 20%] generate configure json file
+2021-12-07 02:08:17 [ INFO ] python3.7.5 /home/ma-user/AscendProjects/MyOperator/cmake/util/parse_ini_to_json.py /home/ma-user/AscendProjects/MyOperator/tbe/op_info_cfg/ai_core/ascend910/relu.ini  /home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg/packages/op_impl/custom/ai_core/tbe/config/aic-ascend910-ops-info.json
+2021-12-07 02:08:18 [ INFO ] ==============check valid for ops info start==============
+2021-12-07 02:08:18 [ INFO ] ==============check valid for ops info end================
+2021-12-07 02:08:18 [ INFO ] Compile op info cfg successfully.
+2021-12-07 02:08:18 [ INFO ] /home/ma-user/AscendProjects/MyOperator/tbe/op_info_cfg/ai_core /home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg/packages/framework/custom/tensorflow/
+2021-12-07 02:08:18 [ INFO ] [INFO] Succed generated /home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg/packages/framework/custom/tensorflow//npu_supported_ops.json
+2021-12-07 02:08:18 [ INFO ] [ 20%] Built target config_json
+2021-12-07 02:08:18 [ INFO ] Scanning dependencies of target cust_tf_parsers
+2021-12-07 02:08:18 [ INFO ] [ 40%] Building CXX object framework/tf_plugin/CMakeFiles/cust_tf_parsers.dir/tensorflow_relu_plugin.cc.o
+2021-12-07 02:08:18 [ INFO ] [ 60%] Linking CXX shared library ../../makepkg/packages/framework/custom/tensorflow/libcust_tf_parsers.so
+2021-12-07 02:08:18 [ INFO ] [ 60%] Built target cust_tf_parsers
+2021-12-07 02:08:18 [ INFO ] Scanning dependencies of target cust_op_proto
+2021-12-07 02:08:18 [ INFO ] [ 80%] Building CXX object op_proto/CMakeFiles/cust_op_proto.dir/relu.cc.o
+2021-12-07 02:08:19 [ INFO ] [100%] Linking CXX shared library ../makepkg/packages/op_proto/custom/libcust_op_proto.so
+2021-12-07 02:08:19 [ INFO ] [100%] Built target cust_op_proto
+2021-12-07 02:08:19 [ INFO ] Scanning dependencies of target custom_opp_Linux_aarch64.run
+2021-12-07 02:08:19 [ INFO ] /home/ma-user/AscendProjects/MyOperator/tbe/op_info_cfg/ai_core /home/ma-user/AscendProjects/MyOperator/cmake-build/framework/op_info_cfg/ai_core
+2021-12-07 02:08:19 [ INFO ] [INFO] Succed generated /home/ma-user/AscendProjects/MyOperator/cmake-build/framework/op_info_cfg/ai_core/npu_supported_ops.json
+2021-12-07 02:08:19 [ INFO ] Header is 671 lines long
+2021-12-07 02:08:19 [ INFO ] About to compress 160 KB of data...
+2021-12-07 02:08:19 [ INFO ] Adding files to archive named "custom_opp_Linux_aarch64.run"...
+2021-12-07 02:08:19 [ INFO ] ./help.sh
+2021-12-07 02:08:19 [ INFO ] ./install.sh
+2021-12-07 02:08:19 [ INFO ] ./packages/framework/custom/tensorflow/
+2021-12-07 02:08:19 [ INFO ] ./packages/framework/custom/tensorflow/npu_supported_ops.json
+2021-12-07 02:08:19 [ INFO ] ./packages/framework/custom/tensorflow/libcust_tf_parsers.so
+2021-12-07 02:08:19 [ INFO ] ./packages/framework/custom/tensorflow/libcust_tf_parsers.so
+2021-12-07 02:08:19 [ INFO ] ./packages/framework/custom/tensorflow/npu_supported_ops.json
+2021-12-07 02:08:19 [ INFO ] ./packages/fusion_rules/custom/
+2021-12-07 02:08:19 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/config/ascend910/
+2021-12-07 02:08:19 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/config/ascend910/aic-ascend910-ops-info.json
+2021-12-07 02:08:19 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/config/ascend910/aic-ascend910-ops-info.json
+2021-12-07 02:08:19 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/custom_impl/
+2021-12-07 02:08:19 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/custom_impl/relu.py
+2021-12-07 02:08:19 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/custom_impl/relu.py
+2021-12-07 02:08:19 [ INFO ] ./packages/op_impl/custom/cpu/aicpu_kernel/custom_impl/
+2021-12-07 02:08:19 [ INFO ] ./packages/op_impl/custom/vector_core/tbe/custom_impl/
+2021-12-07 02:08:19 [ INFO ] ./packages/op_impl/custom/vector_core/tbe/custom_impl/relu.py
+2021-12-07 02:08:19 [ INFO ] ./packages/op_impl/custom/vector_core/tbe/custom_impl/relu.py
+2021-12-07 02:08:19 [ INFO ] ./packages/op_proto/custom/
+2021-12-07 02:08:19 [ INFO ] ./packages/op_proto/custom/libcust_op_proto.so
+2021-12-07 02:08:19 [ INFO ] ./packages/op_proto/custom/libcust_op_proto.so
+2021-12-07 02:08:19 [ INFO ] ./uninstall.sh
+2021-12-07 02:08:19 [ INFO ] ./upgrade.sh
+2021-12-07 02:08:19 [ INFO ] CRC: 2788409130
+2021-12-07 02:08:19 [ INFO ] SHA256: e09ce0abfb40cad8b03c21b7c316e445920ee213358ff827fdef15ca2f2aeb50
+2021-12-07 02:08:19 [ INFO ] Skipping md5sum at user request
+2021-12-07 02:08:19 [ INFO ] Self-extractable archive "custom_opp_Linux_aarch64.run" successfully created.
+2021-12-07 02:08:19 [ INFO ] [100%] Built target custom_opp_Linux_aarch64.run
+2021-12-07 03:15:08 [ INFO ] MyOperator Rebuild Start
+2021-12-07 03:15:08 [ INFO ] -- CMAKE_CURRENT_BINARY_DIR=/home/ma-user/AscendProjects/MyOperator/cmake-build
+2021-12-07 03:15:08 [ INFO ] -- CMAKE_CURRENT_SOURCE_DIR=/home/ma-user/AscendProjects/MyOperator
+2021-12-07 03:15:08 [ INFO ] -- The C compiler identification is GNU 7.5.0
+2021-12-07 03:15:09 [ INFO ] -- The CXX compiler identification is GNU 7.5.0
+2021-12-07 03:15:09 [ INFO ] -- Check for working C compiler: /usr/bin/cc
+2021-12-07 03:15:09 [ INFO ] -- Check for working C compiler: /usr/bin/cc -- works
+2021-12-07 03:15:09 [ INFO ] -- Detecting C compiler ABI info
+2021-12-07 03:15:09 [ INFO ] -- Detecting C compiler ABI info - done
+2021-12-07 03:15:09 [ INFO ] -- Detecting C compile features
+2021-12-07 03:15:09 [ INFO ] -- Detecting C compile features - done
+2021-12-07 03:15:09 [ INFO ] -- Check for working CXX compiler: /usr/bin/c++
+2021-12-07 03:15:09 [ INFO ] -- Check for working CXX compiler: /usr/bin/c++ -- works
+2021-12-07 03:15:09 [ INFO ] -- Detecting CXX compiler ABI info
+2021-12-07 03:15:09 [ INFO ] -- Detecting CXX compiler ABI info - done
+2021-12-07 03:15:10 [ INFO ] -- Detecting CXX compile features
+2021-12-07 03:15:10 [ INFO ] -- Detecting CXX compile features - done
+2021-12-07 03:15:10 [ INFO ] -- ASCEND_TENSOR_COMPILER_INCLUDE=/home/ma-user/Ascend/ascend-toolkit/5.0.2.1/atc/include
+2021-12-07 03:15:10 [ INFO ] -- SYSTEM_INFO=Linux_aarch64
+2021-12-07 03:15:10 [ INFO ] -- RUN_TARGET=custom_opp_Linux_aarch64.run
+2021-12-07 03:15:10 [ INFO ] -- OUT_DIR=/home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg
+2021-12-07 03:15:10 [ INFO ] -- OP_COMMON_INC=
+2021-12-07 03:15:10 [ INFO ] -- SRCS = ./tensorflow_relu_plugin.cc
+2021-12-07 03:15:10 [ INFO ] -- OP_PROTO_TARGET=cust_op_proto
+2021-12-07 03:15:10 [ INFO ] -- OUTPUT_FILES=aic-ascend910-ops-info.json
+2021-12-07 03:15:10 [ INFO ] -- operation system is Linux
+2021-12-07 03:15:10 [ INFO ] -- AICPU_CONFIG_INFO_FLAG=
+2021-12-07 03:15:10 [ INFO ] -- ALL_MODULES=cust_op_proto;config_json;cust_tf_parsers
+2021-12-07 03:15:10 [ INFO ] -- Configuring done
+2021-12-07 03:15:10 [ INFO ] -- Generating done
+2021-12-07 03:15:10 [ INFO ] -- Build files have been written to: /home/ma-user/AscendProjects/MyOperator/cmake-build
+2021-12-07 03:15:10 [ INFO ] Scanning dependencies of target config_json
+2021-12-07 03:15:10 [ INFO ] [ 20%] generate configure json file
+2021-12-07 03:15:10 [ INFO ] python3.7.5 /home/ma-user/AscendProjects/MyOperator/cmake/util/parse_ini_to_json.py /home/ma-user/AscendProjects/MyOperator/tbe/op_info_cfg/ai_core/ascend910/relu.ini  /home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg/packages/op_impl/custom/ai_core/tbe/config/aic-ascend910-ops-info.json
+2021-12-07 03:15:10 [ INFO ] ==============check valid for ops info start==============
+2021-12-07 03:15:10 [ INFO ] ==============check valid for ops info end================
+2021-12-07 03:15:10 [ INFO ] Compile op info cfg successfully.
+2021-12-07 03:15:10 [ INFO ] /home/ma-user/AscendProjects/MyOperator/tbe/op_info_cfg/ai_core /home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg/packages/framework/custom/tensorflow/
+2021-12-07 03:15:10 [ INFO ] [INFO] Succed generated /home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg/packages/framework/custom/tensorflow//npu_supported_ops.json
+2021-12-07 03:15:10 [ INFO ] [ 20%] Built target config_json
+2021-12-07 03:15:10 [ INFO ] Scanning dependencies of target cust_tf_parsers
+2021-12-07 03:15:10 [ INFO ] [ 40%] Building CXX object framework/tf_plugin/CMakeFiles/cust_tf_parsers.dir/tensorflow_relu_plugin.cc.o
+2021-12-07 03:15:11 [ INFO ] [ 60%] Linking CXX shared library ../../makepkg/packages/framework/custom/tensorflow/libcust_tf_parsers.so
+2021-12-07 03:15:11 [ INFO ] [ 60%] Built target cust_tf_parsers
+2021-12-07 03:15:11 [ INFO ] Scanning dependencies of target cust_op_proto
+2021-12-07 03:15:11 [ INFO ] [ 80%] Building CXX object op_proto/CMakeFiles/cust_op_proto.dir/relu.cc.o
+2021-12-07 03:15:12 [ INFO ] [100%] Linking CXX shared library ../makepkg/packages/op_proto/custom/libcust_op_proto.so
+2021-12-07 03:15:12 [ INFO ] [100%] Built target cust_op_proto
+2021-12-07 03:15:12 [ INFO ] Scanning dependencies of target custom_opp_Linux_aarch64.run
+2021-12-07 03:15:12 [ INFO ] /home/ma-user/AscendProjects/MyOperator/tbe/op_info_cfg/ai_core /home/ma-user/AscendProjects/MyOperator/cmake-build/framework/op_info_cfg/ai_core
+2021-12-07 03:15:12 [ INFO ] [INFO] Succed generated /home/ma-user/AscendProjects/MyOperator/cmake-build/framework/op_info_cfg/ai_core/npu_supported_ops.json
+2021-12-07 03:15:12 [ INFO ] Header is 671 lines long
+2021-12-07 03:15:12 [ INFO ] About to compress 160 KB of data...
+2021-12-07 03:15:12 [ INFO ] Adding files to archive named "custom_opp_Linux_aarch64.run"...
+2021-12-07 03:15:12 [ INFO ] ./help.sh
+2021-12-07 03:15:12 [ INFO ] ./install.sh
+2021-12-07 03:15:12 [ INFO ] ./packages/framework/custom/tensorflow/
+2021-12-07 03:15:12 [ INFO ] ./packages/framework/custom/tensorflow/npu_supported_ops.json
+2021-12-07 03:15:12 [ INFO ] ./packages/framework/custom/tensorflow/libcust_tf_parsers.so
+2021-12-07 03:15:12 [ INFO ] ./packages/framework/custom/tensorflow/libcust_tf_parsers.so
+2021-12-07 03:15:12 [ INFO ] ./packages/framework/custom/tensorflow/npu_supported_ops.json
+2021-12-07 03:15:12 [ INFO ] ./packages/fusion_rules/custom/
+2021-12-07 03:15:12 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/config/ascend910/
+2021-12-07 03:15:12 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/config/ascend910/aic-ascend910-ops-info.json
+2021-12-07 03:15:12 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/config/ascend910/aic-ascend910-ops-info.json
+2021-12-07 03:15:12 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/custom_impl/
+2021-12-07 03:15:12 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/custom_impl/relu.py
+2021-12-07 03:15:12 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/custom_impl/relu.py
+2021-12-07 03:15:12 [ INFO ] ./packages/op_impl/custom/cpu/aicpu_kernel/custom_impl/
+2021-12-07 03:15:12 [ INFO ] ./packages/op_impl/custom/vector_core/tbe/custom_impl/
+2021-12-07 03:15:12 [ INFO ] ./packages/op_impl/custom/vector_core/tbe/custom_impl/relu.py
+2021-12-07 03:15:12 [ INFO ] ./packages/op_impl/custom/vector_core/tbe/custom_impl/relu.py
+2021-12-07 03:15:12 [ INFO ] ./packages/op_proto/custom/
+2021-12-07 03:15:12 [ INFO ] ./packages/op_proto/custom/libcust_op_proto.so
+2021-12-07 03:15:12 [ INFO ] ./packages/op_proto/custom/libcust_op_proto.so
+2021-12-07 03:15:12 [ INFO ] ./uninstall.sh
+2021-12-07 03:15:12 [ INFO ] ./upgrade.sh
+2021-12-07 03:15:12 [ INFO ] CRC: 1899630164
+2021-12-07 03:15:12 [ INFO ] SHA256: 5e64caff4ebf54359c07f181801051a2fcbef4de57508c085e5bd67b1127e1ef
+2021-12-07 03:15:12 [ INFO ] Skipping md5sum at user request
+2021-12-07 03:15:12 [ INFO ] Self-extractable archive "custom_opp_Linux_aarch64.run" successfully created.
+2021-12-07 03:15:12 [ INFO ] [100%] Built target custom_opp_Linux_aarch64.run
+2021-12-07 08:35:45 [ INFO ] MyOperator Build Start
+2021-12-07 08:35:46 [ INFO ] -- CMAKE_CURRENT_BINARY_DIR=/home/ma-user/work/AscendProjects/MyOperator/cmake-build
+2021-12-07 08:35:46 [ INFO ] -- CMAKE_CURRENT_SOURCE_DIR=/home/ma-user/work/AscendProjects/MyOperator
+2021-12-07 08:35:46 [ INFO ] -- The C compiler identification is GNU 7.5.0
+2021-12-07 08:35:46 [ INFO ] -- The CXX compiler identification is GNU 7.5.0
+2021-12-07 08:35:46 [ INFO ] -- Check for working C compiler: /usr/bin/cc
+2021-12-07 08:35:47 [ INFO ] -- Check for working C compiler: /usr/bin/cc -- works
+2021-12-07 08:35:47 [ INFO ] -- Detecting C compiler ABI info
+2021-12-07 08:35:47 [ INFO ] -- Detecting C compiler ABI info - done
+2021-12-07 08:35:47 [ INFO ] -- Detecting C compile features
+2021-12-07 08:35:49 [ INFO ] -- Detecting C compile features - done
+2021-12-07 08:35:50 [ INFO ] -- Check for working CXX compiler: /usr/bin/c++
+2021-12-07 08:35:50 [ INFO ] -- Check for working CXX compiler: /usr/bin/c++ -- works
+2021-12-07 08:35:50 [ INFO ] -- Detecting CXX compiler ABI info
+2021-12-07 08:35:51 [ INFO ] -- Detecting CXX compiler ABI info - done
+2021-12-07 08:35:51 [ INFO ] -- Detecting CXX compile features
+2021-12-07 08:35:54 [ INFO ] -- Detecting CXX compile features - done
+2021-12-07 08:35:54 [ INFO ] -- ASCEND_TENSOR_COMPILER_INCLUDE=/home/ma-user/Ascend/ascend-toolkit/5.0.2.1/atc/include
+2021-12-07 08:35:54 [ INFO ] -- SYSTEM_INFO=Linux_aarch64
+2021-12-07 08:35:54 [ INFO ] -- RUN_TARGET=custom_opp_Linux_aarch64.run
+2021-12-07 08:35:54 [ INFO ] -- OUT_DIR=/home/ma-user/work/AscendProjects/MyOperator/cmake-build/makepkg
+2021-12-07 08:35:54 [ INFO ] -- OP_COMMON_INC=
+2021-12-07 08:35:54 [ INFO ] -- SRCS = ./tensorflow_relu_plugin.cc
+2021-12-07 08:35:54 [ INFO ] -- OP_PROTO_TARGET=cust_op_proto
+2021-12-07 08:35:54 [ INFO ] -- OUTPUT_FILES=aic-ascend910-ops-info.json
+2021-12-07 08:35:54 [ INFO ] -- operation system is Linux
+2021-12-07 08:35:54 [ INFO ] -- AICPU_CONFIG_INFO_FLAG=
+2021-12-07 08:35:54 [ INFO ] -- ALL_MODULES=cust_op_proto;config_json;cust_tf_parsers
+2021-12-07 08:35:54 [ INFO ] -- Configuring done
+2021-12-07 08:35:55 [ INFO ] -- Generating done
+2021-12-07 08:35:55 [ INFO ] -- Build files have been written to: /home/ma-user/work/AscendProjects/MyOperator/cmake-build
+2021-12-07 08:35:55 [ INFO ] Scanning dependencies of target config_json
+2021-12-07 08:35:55 [ INFO ] [ 20%] generate configure json file
+2021-12-07 08:35:55 [ INFO ] python3.7.5 /home/ma-user/work/AscendProjects/MyOperator/cmake/util/parse_ini_to_json.py /home/ma-user/work/AscendProjects/MyOperator/tbe/op_info_cfg/ai_core/ascend910/relu.ini  /home/ma-user/work/AscendProjects/MyOperator/cmake-build/makepkg/packages/op_impl/custom/ai_core/tbe/config/aic-ascend910-ops-info.json
+2021-12-07 08:35:55 [ INFO ] ==============check valid for ops info start==============
+2021-12-07 08:35:55 [ INFO ] ==============check valid for ops info end================
+2021-12-07 08:35:55 [ INFO ] Compile op info cfg successfully.
+2021-12-07 08:35:55 [ INFO ] /home/ma-user/work/AscendProjects/MyOperator/tbe/op_info_cfg/ai_core /home/ma-user/work/AscendProjects/MyOperator/cmake-build/makepkg/packages/framework/custom/tensorflow/
+2021-12-07 08:35:55 [ INFO ] [INFO] Succed generated /home/ma-user/work/AscendProjects/MyOperator/cmake-build/makepkg/packages/framework/custom/tensorflow//npu_supported_ops.json
+2021-12-07 08:35:55 [ INFO ] [ 20%] Built target config_json
+2021-12-07 08:35:55 [ INFO ] Scanning dependencies of target cust_tf_parsers
+2021-12-07 08:35:55 [ INFO ] [ 40%] Building CXX object framework/tf_plugin/CMakeFiles/cust_tf_parsers.dir/tensorflow_relu_plugin.cc.o
+2021-12-07 08:35:56 [ INFO ] [ 60%] Linking CXX shared library ../../makepkg/packages/framework/custom/tensorflow/libcust_tf_parsers.so
+2021-12-07 08:35:56 [ INFO ] [ 60%] Built target cust_tf_parsers
+2021-12-07 08:35:56 [ INFO ] Scanning dependencies of target cust_op_proto
+2021-12-07 08:35:56 [ INFO ] [ 80%] Building CXX object op_proto/CMakeFiles/cust_op_proto.dir/relu.cc.o
+2021-12-07 08:35:57 [ INFO ] [100%] Linking CXX shared library ../makepkg/packages/op_proto/custom/libcust_op_proto.so
+2021-12-07 08:35:57 [ INFO ] [100%] Built target cust_op_proto
+2021-12-07 08:35:57 [ INFO ] Scanning dependencies of target custom_opp_Linux_aarch64.run
+2021-12-07 08:35:57 [ INFO ] /home/ma-user/work/AscendProjects/MyOperator/tbe/op_info_cfg/ai_core /home/ma-user/work/AscendProjects/MyOperator/cmake-build/framework/op_info_cfg/ai_core
+2021-12-07 08:35:57 [ INFO ] [INFO] Succed generated /home/ma-user/work/AscendProjects/MyOperator/cmake-build/framework/op_info_cfg/ai_core/npu_supported_ops.json
+2021-12-07 08:35:57 [ INFO ] Header is 671 lines long
+2021-12-07 08:35:58 [ INFO ] About to compress 160 KB of data...
+2021-12-07 08:35:58 [ INFO ] Adding files to archive named "custom_opp_Linux_aarch64.run"...
+2021-12-07 08:35:58 [ INFO ] ./help.sh
+2021-12-07 08:35:58 [ INFO ] ./install.sh
+2021-12-07 08:35:58 [ INFO ] ./packages/framework/custom/tensorflow/
+2021-12-07 08:35:58 [ INFO ] ./packages/framework/custom/tensorflow/libcust_tf_parsers.so
+2021-12-07 08:35:58 [ INFO ] ./packages/framework/custom/tensorflow/npu_supported_ops.json
+2021-12-07 08:35:58 [ INFO ] ./packages/framework/custom/tensorflow/libcust_tf_parsers.so
+2021-12-07 08:35:58 [ INFO ] ./packages/framework/custom/tensorflow/npu_supported_ops.json
+2021-12-07 08:35:58 [ INFO ] ./packages/fusion_rules/custom/
+2021-12-07 08:35:58 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/config/ascend910/
+2021-12-07 08:35:58 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/config/ascend910/aic-ascend910-ops-info.json
+2021-12-07 08:35:58 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/config/ascend910/aic-ascend910-ops-info.json
+2021-12-07 08:35:58 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/custom_impl/
+2021-12-07 08:35:58 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/custom_impl/relu.py
+2021-12-07 08:35:58 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/custom_impl/relu.py
+2021-12-07 08:35:58 [ INFO ] ./packages/op_impl/custom/cpu/aicpu_kernel/custom_impl/
+2021-12-07 08:35:58 [ INFO ] ./packages/op_impl/custom/vector_core/tbe/custom_impl/
+2021-12-07 08:35:58 [ INFO ] ./packages/op_impl/custom/vector_core/tbe/custom_impl/relu.py
+2021-12-07 08:35:58 [ INFO ] ./packages/op_impl/custom/vector_core/tbe/custom_impl/relu.py
+2021-12-07 08:35:58 [ INFO ] ./packages/op_proto/custom/
+2021-12-07 08:35:58 [ INFO ] ./packages/op_proto/custom/libcust_op_proto.so
+2021-12-07 08:35:58 [ INFO ] ./packages/op_proto/custom/libcust_op_proto.so
+2021-12-07 08:35:58 [ INFO ] ./uninstall.sh
+2021-12-07 08:35:58 [ INFO ] ./upgrade.sh
+2021-12-07 08:35:58 [ INFO ] CRC: 2338207657
+2021-12-07 08:35:58 [ INFO ] SHA256: cdf877b2bb7cfd065fa2fde4c3bbf4bde2a809cced20deafdc464b568da088b0
+2021-12-07 08:35:58 [ INFO ] Skipping md5sum at user request
+2021-12-07 08:35:58 [ INFO ] Self-extractable archive "custom_opp_Linux_aarch64.run" successfully created.
+2021-12-07 08:35:58 [ INFO ] [100%] Built target custom_opp_Linux_aarch64.run
+2021-12-24 13:39:33 [ INFO ] MyOperator Build Start
+2021-12-24 13:39:33 [ INFO ] -- CMAKE_CURRENT_BINARY_DIR=/home/ma-user/AscendProjects/MyOperator/cmake-build
+2021-12-24 13:39:33 [ INFO ] -- CMAKE_CURRENT_SOURCE_DIR=/home/ma-user/AscendProjects/MyOperator
+2021-12-24 13:39:33 [ INFO ] -- The C compiler identification is GNU 7.5.0
+2021-12-24 13:39:34 [ INFO ] -- The CXX compiler identification is GNU 7.5.0
+2021-12-24 13:39:34 [ INFO ] -- Check for working C compiler: /usr/bin/cc
+2021-12-24 13:39:34 [ INFO ] -- Check for working C compiler: /usr/bin/cc -- works
+2021-12-24 13:39:34 [ INFO ] -- Detecting C compiler ABI info
+2021-12-24 13:39:34 [ INFO ] -- Detecting C compiler ABI info - done
+2021-12-24 13:39:34 [ INFO ] -- Detecting C compile features
+2021-12-24 13:39:34 [ INFO ] -- Detecting C compile features - done
+2021-12-24 13:39:34 [ INFO ] -- Check for working CXX compiler: /usr/bin/c++
+2021-12-24 13:39:34 [ INFO ] -- Check for working CXX compiler: /usr/bin/c++ -- works
+2021-12-24 13:39:34 [ INFO ] -- Detecting CXX compiler ABI info
+2021-12-24 13:39:34 [ INFO ] -- Detecting CXX compiler ABI info - done
+2021-12-24 13:39:35 [ INFO ] -- Detecting CXX compile features
+2021-12-24 13:39:35 [ INFO ] -- Detecting CXX compile features - done
+2021-12-24 13:39:35 [ INFO ] -- ASCEND_TENSOR_COMPILER_INCLUDE=/home/ma-user/Ascend/ascend-toolkit/5.0.2.1/atc/include
+2021-12-24 13:39:35 [ INFO ] -- SYSTEM_INFO=Linux_aarch64
+2021-12-24 13:39:35 [ INFO ] -- RUN_TARGET=custom_opp_Linux_aarch64.run
+2021-12-24 13:39:35 [ INFO ] -- OUT_DIR=/home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg
+2021-12-24 13:39:35 [ INFO ] -- OP_COMMON_INC=
+2021-12-24 13:39:35 [ INFO ] -- SRCS = ./tensorflow_relu_plugin.cc
+2021-12-24 13:39:35 [ INFO ] -- OP_PROTO_TARGET=cust_op_proto
+2021-12-24 13:39:35 [ INFO ] -- OUTPUT_FILES=aic-ascend910-ops-info.json
+2021-12-24 13:39:35 [ INFO ] -- operation system is Linux
+2021-12-24 13:39:35 [ INFO ] -- AICPU_CONFIG_INFO_FLAG=
+2021-12-24 13:39:35 [ INFO ] -- ALL_MODULES=cust_op_proto;config_json;cust_tf_parsers
+2021-12-24 13:39:35 [ INFO ] -- Configuring done
+2021-12-24 13:39:35 [ INFO ] -- Generating done
+2021-12-24 13:39:35 [ INFO ] -- Build files have been written to: /home/ma-user/AscendProjects/MyOperator/cmake-build
+2021-12-24 13:39:35 [ INFO ] Scanning dependencies of target config_json
+2021-12-24 13:39:35 [ INFO ] [ 20%] generate configure json file
+2021-12-24 13:39:35 [ INFO ] python3.7.5 /home/ma-user/AscendProjects/MyOperator/cmake/util/parse_ini_to_json.py /home/ma-user/AscendProjects/MyOperator/tbe/op_info_cfg/ai_core/ascend910/relu.ini  /home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg/packages/op_impl/custom/ai_core/tbe/config/aic-ascend910-ops-info.json
+2021-12-24 13:39:35 [ INFO ] ==============check valid for ops info start==============
+2021-12-24 13:39:35 [ INFO ] ==============check valid for ops info end================
+2021-12-24 13:39:35 [ INFO ] Compile op info cfg successfully.
+2021-12-24 13:39:35 [ INFO ] /home/ma-user/AscendProjects/MyOperator/tbe/op_info_cfg/ai_core /home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg/packages/framework/custom/tensorflow/
+2021-12-24 13:39:35 [ INFO ] [INFO] Succed generated /home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg/packages/framework/custom/tensorflow//npu_supported_ops.json
+2021-12-24 13:39:35 [ INFO ] [ 20%] Built target config_json
+2021-12-24 13:39:35 [ INFO ] Scanning dependencies of target cust_tf_parsers
+2021-12-24 13:39:35 [ INFO ] [ 40%] Building CXX object framework/tf_plugin/CMakeFiles/cust_tf_parsers.dir/tensorflow_relu_plugin.cc.o
+2021-12-24 13:39:36 [ INFO ] [ 60%] Linking CXX shared library ../../makepkg/packages/framework/custom/tensorflow/libcust_tf_parsers.so
+2021-12-24 13:39:36 [ INFO ] [ 60%] Built target cust_tf_parsers
+2021-12-24 13:39:36 [ INFO ] Scanning dependencies of target cust_op_proto
+2021-12-24 13:39:36 [ INFO ] [ 80%] Building CXX object op_proto/CMakeFiles/cust_op_proto.dir/sqrt.cc.o
+2021-12-24 13:39:36 [ INFO ] [100%] Linking CXX shared library ../makepkg/packages/op_proto/custom/libcust_op_proto.so
+2021-12-24 13:39:37 [ INFO ] [100%] Built target cust_op_proto
+2021-12-24 13:39:37 [ INFO ] Scanning dependencies of target custom_opp_Linux_aarch64.run
+2021-12-24 13:39:37 [ INFO ] /home/ma-user/AscendProjects/MyOperator/tbe/op_info_cfg/ai_core /home/ma-user/AscendProjects/MyOperator/cmake-build/framework/op_info_cfg/ai_core
+2021-12-24 13:39:37 [ INFO ] [INFO] Succed generated /home/ma-user/AscendProjects/MyOperator/cmake-build/framework/op_info_cfg/ai_core/npu_supported_ops.json
+2021-12-24 13:39:37 [ INFO ] Header is 671 lines long
+2021-12-24 13:39:37 [ INFO ] About to compress 152 KB of data...
+2021-12-24 13:39:37 [ INFO ] Adding files to archive named "custom_opp_Linux_aarch64.run"...
+2021-12-24 13:39:37 [ INFO ] ./help.sh
+2021-12-24 13:39:37 [ INFO ] ./install.sh
+2021-12-24 13:39:37 [ INFO ] ./packages/framework/custom/tensorflow/
+2021-12-24 13:39:37 [ INFO ] ./packages/framework/custom/tensorflow/npu_supported_ops.json
+2021-12-24 13:39:37 [ INFO ] ./packages/framework/custom/tensorflow/libcust_tf_parsers.so
+2021-12-24 13:39:37 [ INFO ] ./packages/framework/custom/tensorflow/libcust_tf_parsers.so
+2021-12-24 13:39:37 [ INFO ] ./packages/framework/custom/tensorflow/npu_supported_ops.json
+2021-12-24 13:39:37 [ INFO ] ./packages/fusion_rules/custom/
+2021-12-24 13:39:37 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/config/ascend910/
+2021-12-24 13:39:37 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/config/ascend910/aic-ascend910-ops-info.json
+2021-12-24 13:39:37 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/config/ascend910/aic-ascend910-ops-info.json
+2021-12-24 13:39:37 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/custom_impl/
+2021-12-24 13:39:37 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/custom_impl/sqrt.py
+2021-12-24 13:39:37 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/custom_impl/sqrt.py
+2021-12-24 13:39:37 [ INFO ] ./packages/op_impl/custom/cpu/aicpu_kernel/custom_impl/
+2021-12-24 13:39:37 [ INFO ] ./packages/op_impl/custom/vector_core/tbe/custom_impl/
+2021-12-24 13:39:37 [ INFO ] ./packages/op_impl/custom/vector_core/tbe/custom_impl/sqrt.py
+2021-12-24 13:39:37 [ INFO ] ./packages/op_impl/custom/vector_core/tbe/custom_impl/sqrt.py
+2021-12-24 13:39:37 [ INFO ] ./packages/op_proto/custom/
+2021-12-24 13:39:37 [ INFO ] ./packages/op_proto/custom/libcust_op_proto.so
+2021-12-24 13:39:37 [ INFO ] ./packages/op_proto/custom/libcust_op_proto.so
+2021-12-24 13:39:37 [ INFO ] ./uninstall.sh
+2021-12-24 13:39:37 [ INFO ] ./upgrade.sh
+2021-12-24 13:39:37 [ INFO ] CRC: 3123064987
+2021-12-24 13:39:37 [ INFO ] SHA256: 1187c19f799016a8af01695b1a4c5c74cc490cb309347668f89f1cd6cc0491e1
+2021-12-24 13:39:37 [ INFO ] Skipping md5sum at user request
+2021-12-24 13:39:37 [ INFO ] Self-extractable archive "custom_opp_Linux_aarch64.run" successfully created.
+2021-12-24 13:39:37 [ INFO ] [100%] Built target custom_opp_Linux_aarch64.run
+2021-12-24 14:53:10 [ INFO ] MyOperator Build Start
+2021-12-24 14:53:10 [ INFO ] -- CMAKE_CURRENT_BINARY_DIR=/home/ma-user/AscendProjects/MyOperator/cmake-build
+2021-12-24 14:53:10 [ INFO ] -- CMAKE_CURRENT_SOURCE_DIR=/home/ma-user/AscendProjects/MyOperator
+2021-12-24 14:53:10 [ INFO ] -- The C compiler identification is GNU 7.5.0
+2021-12-24 14:53:10 [ INFO ] -- The CXX compiler identification is GNU 7.5.0
+2021-12-24 14:53:10 [ INFO ] -- Check for working C compiler: /usr/bin/cc
+2021-12-24 14:53:11 [ INFO ] -- Check for working C compiler: /usr/bin/cc -- works
+2021-12-24 14:53:11 [ INFO ] -- Detecting C compiler ABI info
+2021-12-24 14:53:11 [ INFO ] -- Detecting C compiler ABI info - done
+2021-12-24 14:53:11 [ INFO ] -- Detecting C compile features
+2021-12-24 14:53:11 [ INFO ] -- Detecting C compile features - done
+2021-12-24 14:53:11 [ INFO ] -- Check for working CXX compiler: /usr/bin/c++
+2021-12-24 14:53:11 [ INFO ] -- Check for working CXX compiler: /usr/bin/c++ -- works
+2021-12-24 14:53:11 [ INFO ] -- Detecting CXX compiler ABI info
+2021-12-24 14:53:11 [ INFO ] -- Detecting CXX compiler ABI info - done
+2021-12-24 14:53:11 [ INFO ] -- Detecting CXX compile features
+2021-12-24 14:53:12 [ INFO ] -- Detecting CXX compile features - done
+2021-12-24 14:53:12 [ INFO ] -- ASCEND_TENSOR_COMPILER_INCLUDE=/home/ma-user/Ascend/ascend-toolkit/5.0.2.1/atc/include
+2021-12-24 14:53:12 [ INFO ] -- SYSTEM_INFO=Linux_aarch64
+2021-12-24 14:53:12 [ INFO ] -- RUN_TARGET=custom_opp_Linux_aarch64.run
+2021-12-24 14:53:12 [ INFO ] -- OUT_DIR=/home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg
+2021-12-24 14:53:12 [ INFO ] -- OP_COMMON_INC=
+2021-12-24 14:53:12 [ INFO ] -- SRCS = ./tensorflow_relu_plugin.cc
+2021-12-24 14:53:12 [ INFO ] -- OP_PROTO_TARGET=cust_op_proto
+2021-12-24 14:53:12 [ INFO ] -- OUTPUT_FILES=aic-ascend910-ops-info.json
+2021-12-24 14:53:12 [ INFO ] -- operation system is Linux
+2021-12-24 14:53:12 [ INFO ] -- AICPU_CONFIG_INFO_FLAG=
+2021-12-24 14:53:12 [ INFO ] -- ALL_MODULES=cust_op_proto;config_json;cust_tf_parsers
+2021-12-24 14:53:12 [ INFO ] -- Configuring done
+2021-12-24 14:53:12 [ INFO ] -- Generating done
+2021-12-24 14:53:12 [ INFO ] -- Build files have been written to: /home/ma-user/AscendProjects/MyOperator/cmake-build
+2021-12-24 14:53:12 [ INFO ] Scanning dependencies of target config_json
+2021-12-24 14:53:12 [ INFO ] [ 20%] generate configure json file
+2021-12-24 14:53:12 [ INFO ] python3.7.5 /home/ma-user/AscendProjects/MyOperator/cmake/util/parse_ini_to_json.py /home/ma-user/AscendProjects/MyOperator/tbe/op_info_cfg/ai_core/ascend910/relu.ini  /home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg/packages/op_impl/custom/ai_core/tbe/config/aic-ascend910-ops-info.json
+2021-12-24 14:53:12 [ INFO ] ==============check valid for ops info start==============
+2021-12-24 14:53:12 [ INFO ] ==============check valid for ops info end================
+2021-12-24 14:53:12 [ INFO ] Compile op info cfg successfully.
+2021-12-24 14:53:12 [ INFO ] /home/ma-user/AscendProjects/MyOperator/tbe/op_info_cfg/ai_core /home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg/packages/framework/custom/tensorflow/
+2021-12-24 14:53:12 [ INFO ] [INFO] Succed generated /home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg/packages/framework/custom/tensorflow//npu_supported_ops.json
+2021-12-24 14:53:12 [ INFO ] [ 20%] Built target config_json
+2021-12-24 14:53:12 [ INFO ] Scanning dependencies of target cust_tf_parsers
+2021-12-24 14:53:12 [ INFO ] [ 40%] Building CXX object framework/tf_plugin/CMakeFiles/cust_tf_parsers.dir/tensorflow_relu_plugin.cc.o
+2021-12-24 14:53:13 [ INFO ] [ 60%] Linking CXX shared library ../../makepkg/packages/framework/custom/tensorflow/libcust_tf_parsers.so
+2021-12-24 14:53:13 [ INFO ] [ 60%] Built target cust_tf_parsers
+2021-12-24 14:53:13 [ INFO ] Scanning dependencies of target cust_op_proto
+2021-12-24 14:53:13 [ INFO ] [ 80%] Building CXX object op_proto/CMakeFiles/cust_op_proto.dir/sqrt.cc.o
+2021-12-24 14:53:13 [ INFO ] [100%] Linking CXX shared library ../makepkg/packages/op_proto/custom/libcust_op_proto.so
+2021-12-24 14:53:13 [ INFO ] [100%] Built target cust_op_proto
+2021-12-24 14:53:13 [ INFO ] Scanning dependencies of target custom_opp_Linux_aarch64.run
+2021-12-24 14:53:13 [ INFO ] /home/ma-user/AscendProjects/MyOperator/tbe/op_info_cfg/ai_core /home/ma-user/AscendProjects/MyOperator/cmake-build/framework/op_info_cfg/ai_core
+2021-12-24 14:53:13 [ INFO ] [INFO] Succed generated /home/ma-user/AscendProjects/MyOperator/cmake-build/framework/op_info_cfg/ai_core/npu_supported_ops.json
+2021-12-24 14:53:13 [ INFO ] Header is 671 lines long
+2021-12-24 14:53:13 [ INFO ] About to compress 152 KB of data...
+2021-12-24 14:53:13 [ INFO ] Adding files to archive named "custom_opp_Linux_aarch64.run"...
+2021-12-24 14:53:13 [ INFO ] ./help.sh
+2021-12-24 14:53:13 [ INFO ] ./install.sh
+2021-12-24 14:53:13 [ INFO ] ./packages/framework/custom/tensorflow/
+2021-12-24 14:53:13 [ INFO ] ./packages/framework/custom/tensorflow/npu_supported_ops.json
+2021-12-24 14:53:13 [ INFO ] ./packages/framework/custom/tensorflow/libcust_tf_parsers.so
+2021-12-24 14:53:13 [ INFO ] ./packages/framework/custom/tensorflow/libcust_tf_parsers.so
+2021-12-24 14:53:13 [ INFO ] ./packages/framework/custom/tensorflow/npu_supported_ops.json
+2021-12-24 14:53:13 [ INFO ] ./packages/fusion_rules/custom/
+2021-12-24 14:53:13 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/config/ascend910/
+2021-12-24 14:53:13 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/config/ascend910/aic-ascend910-ops-info.json
+2021-12-24 14:53:13 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/config/ascend910/aic-ascend910-ops-info.json
+2021-12-24 14:53:13 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/custom_impl/
+2021-12-24 14:53:13 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/custom_impl/sqrt.py
+2021-12-24 14:53:13 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/custom_impl/sqrt.py
+2021-12-24 14:53:13 [ INFO ] ./packages/op_impl/custom/cpu/aicpu_kernel/custom_impl/
+2021-12-24 14:53:13 [ INFO ] ./packages/op_impl/custom/vector_core/tbe/custom_impl/
+2021-12-24 14:53:13 [ INFO ] ./packages/op_impl/custom/vector_core/tbe/custom_impl/sqrt.py
+2021-12-24 14:53:13 [ INFO ] ./packages/op_impl/custom/vector_core/tbe/custom_impl/sqrt.py
+2021-12-24 14:53:13 [ INFO ] ./packages/op_proto/custom/
+2021-12-24 14:53:13 [ INFO ] ./packages/op_proto/custom/libcust_op_proto.so
+2021-12-24 14:53:13 [ INFO ] ./packages/op_proto/custom/libcust_op_proto.so
+2021-12-24 14:53:13 [ INFO ] ./uninstall.sh
+2021-12-24 14:53:13 [ INFO ] ./upgrade.sh
+2021-12-24 14:53:13 [ INFO ] CRC: 1903266397
+2021-12-24 14:53:14 [ INFO ] SHA256: 6a97153977102ac55d309b0311847a4dfae87b54481629ce1e152682ebff4285
+2021-12-24 14:53:14 [ INFO ] Skipping md5sum at user request
+2021-12-24 14:53:14 [ INFO ] Self-extractable archive "custom_opp_Linux_aarch64.run" successfully created.
+2021-12-24 14:53:14 [ INFO ] [100%] Built target custom_opp_Linux_aarch64.run
+2021-12-24 14:56:21 [ INFO ] MyOperator Build Start
+2021-12-24 14:56:21 [ INFO ] -- CMAKE_CURRENT_BINARY_DIR=/home/ma-user/AscendProjects/MyOperator/cmake-build
+2021-12-24 14:56:21 [ INFO ] -- CMAKE_CURRENT_SOURCE_DIR=/home/ma-user/AscendProjects/MyOperator
+2021-12-24 14:56:21 [ INFO ] -- ASCEND_TENSOR_COMPILER_INCLUDE=/home/ma-user/Ascend/ascend-toolkit/5.0.2.1/atc/include
+2021-12-24 14:56:21 [ INFO ] -- SYSTEM_INFO=Linux_aarch64
+2021-12-24 14:56:21 [ INFO ] -- RUN_TARGET=custom_opp_Linux_aarch64.run
+2021-12-24 14:56:21 [ INFO ] -- OUT_DIR=/home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg
+2021-12-24 14:56:21 [ INFO ] -- OP_COMMON_INC=
+2021-12-24 14:56:21 [ INFO ] -- SRCS = ./tensorflow_sqrt_plugin.cc
+2021-12-24 14:56:21 [ INFO ] -- OP_PROTO_TARGET=cust_op_proto
+2021-12-24 14:56:21 [ INFO ] -- OUTPUT_FILES=aic-ascend910-ops-info.json
+2021-12-24 14:56:21 [ INFO ] -- operation system is Linux
+2021-12-24 14:56:21 [ INFO ] -- AICPU_CONFIG_INFO_FLAG=
+2021-12-24 14:56:21 [ INFO ] -- ALL_MODULES=cust_op_proto;config_json;cust_tf_parsers
+2021-12-24 14:56:21 [ INFO ] -- Configuring done
+2021-12-24 14:56:21 [ INFO ] -- Generating done
+2021-12-24 14:56:21 [ INFO ] -- Build files have been written to: /home/ma-user/AscendProjects/MyOperator/cmake-build
+2021-12-24 14:56:21 [ INFO ] [ 20%] generate configure json file
+2021-12-24 14:56:21 [ INFO ] python3.7.5 /home/ma-user/AscendProjects/MyOperator/cmake/util/parse_ini_to_json.py /home/ma-user/AscendProjects/MyOperator/tbe/op_info_cfg/ai_core/ascend910/relu.ini  /home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg/packages/op_impl/custom/ai_core/tbe/config/aic-ascend910-ops-info.json
+2021-12-24 14:56:21 [ INFO ] ==============check valid for ops info start==============
+2021-12-24 14:56:21 [ INFO ] ==============check valid for ops info end================
+2021-12-24 14:56:21 [ INFO ] Compile op info cfg successfully.
+2021-12-24 14:56:21 [ INFO ] /home/ma-user/AscendProjects/MyOperator/tbe/op_info_cfg/ai_core /home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg/packages/framework/custom/tensorflow/
+2021-12-24 14:56:21 [ INFO ] [INFO] Succed generated /home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg/packages/framework/custom/tensorflow//npu_supported_ops.json
+2021-12-24 14:56:21 [ INFO ] [ 20%] Built target config_json
+2021-12-24 14:56:21 [ INFO ] Scanning dependencies of target cust_tf_parsers
+2021-12-24 14:56:21 [ INFO ] [ 40%] Building CXX object framework/tf_plugin/CMakeFiles/cust_tf_parsers.dir/tensorflow_sqrt_plugin.cc.o
+2021-12-24 14:56:22 [ INFO ] [ 60%] Linking CXX shared library ../../makepkg/packages/framework/custom/tensorflow/libcust_tf_parsers.so
+2021-12-24 14:56:22 [ INFO ] [ 60%] Built target cust_tf_parsers
+2021-12-24 14:56:22 [ INFO ] [ 80%] Linking CXX shared library ../makepkg/packages/op_proto/custom/libcust_op_proto.so
+2021-12-24 14:56:22 [ INFO ] [100%] Built target cust_op_proto
+2021-12-24 14:56:22 [ INFO ] /home/ma-user/AscendProjects/MyOperator/tbe/op_info_cfg/ai_core /home/ma-user/AscendProjects/MyOperator/cmake-build/framework/op_info_cfg/ai_core
+2021-12-24 14:56:22 [ INFO ] [INFO] Succed generated /home/ma-user/AscendProjects/MyOperator/cmake-build/framework/op_info_cfg/ai_core/npu_supported_ops.json
+2021-12-24 14:56:22 [ INFO ] Header is 671 lines long
+2021-12-24 14:56:22 [ WARN ] WARNING: Overwriting existing file: custom_opp_Linux_aarch64.run
+2021-12-24 14:56:22 [ INFO ] About to compress 152 KB of data...
+2021-12-24 14:56:22 [ INFO ] Adding files to archive named "custom_opp_Linux_aarch64.run"...
+2021-12-24 14:56:22 [ INFO ] ./help.sh
+2021-12-24 14:56:22 [ INFO ] ./install.sh
+2021-12-24 14:56:22 [ INFO ] ./packages/framework/custom/tensorflow/
+2021-12-24 14:56:22 [ INFO ] ./packages/framework/custom/tensorflow/npu_supported_ops.json
+2021-12-24 14:56:22 [ INFO ] ./packages/framework/custom/tensorflow/libcust_tf_parsers.so
+2021-12-24 14:56:22 [ INFO ] ./packages/framework/custom/tensorflow/libcust_tf_parsers.so
+2021-12-24 14:56:22 [ INFO ] ./packages/framework/custom/tensorflow/npu_supported_ops.json
+2021-12-24 14:56:22 [ INFO ] ./packages/fusion_rules/custom/
+2021-12-24 14:56:22 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/config/ascend910/
+2021-12-24 14:56:22 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/config/ascend910/aic-ascend910-ops-info.json
+2021-12-24 14:56:22 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/config/ascend910/aic-ascend910-ops-info.json
+2021-12-24 14:56:22 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/custom_impl/
+2021-12-24 14:56:22 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/custom_impl/sqrt.py
+2021-12-24 14:56:22 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/custom_impl/sqrt.py
+2021-12-24 14:56:22 [ INFO ] ./packages/op_impl/custom/cpu/aicpu_kernel/custom_impl/
+2021-12-24 14:56:22 [ INFO ] ./packages/op_impl/custom/vector_core/tbe/custom_impl/
+2021-12-24 14:56:22 [ INFO ] ./packages/op_impl/custom/vector_core/tbe/custom_impl/sqrt.py
+2021-12-24 14:56:22 [ INFO ] ./packages/op_impl/custom/vector_core/tbe/custom_impl/sqrt.py
+2021-12-24 14:56:22 [ INFO ] ./packages/op_proto/custom/
+2021-12-24 14:56:22 [ INFO ] ./packages/op_proto/custom/libcust_op_proto.so
+2021-12-24 14:56:22 [ INFO ] ./packages/op_proto/custom/libcust_op_proto.so
+2021-12-24 14:56:22 [ INFO ] ./uninstall.sh
+2021-12-24 14:56:22 [ INFO ] ./upgrade.sh
+2021-12-24 14:56:22 [ INFO ] CRC: 2873022077
+2021-12-24 14:56:22 [ INFO ] SHA256: 5e52ee7114eb3e9e609a80d39aafa28f74337aeb16ff598c736d6fe29d74678d
+2021-12-24 14:56:22 [ INFO ] Skipping md5sum at user request
+2021-12-24 14:56:22 [ INFO ] Self-extractable archive "custom_opp_Linux_aarch64.run" successfully created.
+2021-12-24 14:56:22 [ INFO ] [100%] Built target custom_opp_Linux_aarch64.run
+2021-12-24 15:00:32 [ INFO ] MyOperator Build Start
+2021-12-24 15:00:33 [ INFO ] -- CMAKE_CURRENT_BINARY_DIR=/home/ma-user/AscendProjects/MyOperator/cmake-build
+2021-12-24 15:00:33 [ INFO ] -- CMAKE_CURRENT_SOURCE_DIR=/home/ma-user/AscendProjects/MyOperator
+2021-12-24 15:00:33 [ INFO ] -- ASCEND_TENSOR_COMPILER_INCLUDE=/home/ma-user/Ascend/ascend-toolkit/5.0.2.1/atc/include
+2021-12-24 15:00:33 [ INFO ] -- SYSTEM_INFO=Linux_aarch64
+2021-12-24 15:00:33 [ INFO ] -- RUN_TARGET=custom_opp_Linux_aarch64.run
+2021-12-24 15:00:33 [ INFO ] -- OUT_DIR=/home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg
+2021-12-24 15:00:33 [ INFO ] -- OP_COMMON_INC=
+2021-12-24 15:00:33 [ INFO ] -- SRCS = ./tensorflow_sqrt_plugin.cc
+2021-12-24 15:00:33 [ INFO ] -- OP_PROTO_TARGET=cust_op_proto
+2021-12-24 15:00:33 [ INFO ] -- OUTPUT_FILES=aic-ascend910-ops-info.json
+2021-12-24 15:00:33 [ INFO ] -- operation system is Linux
+2021-12-24 15:00:33 [ INFO ] -- AICPU_CONFIG_INFO_FLAG=
+2021-12-24 15:00:33 [ INFO ] -- ALL_MODULES=cust_op_proto;config_json;cust_tf_parsers
+2021-12-24 15:00:33 [ INFO ] -- Configuring done
+2021-12-24 15:00:33 [ INFO ] -- Generating done
+2021-12-24 15:00:33 [ INFO ] -- Build files have been written to: /home/ma-user/AscendProjects/MyOperator/cmake-build
+2021-12-24 15:00:33 [ INFO ] [ 20%] generate configure json file
+2021-12-24 15:00:33 [ INFO ] python3.7.5 /home/ma-user/AscendProjects/MyOperator/cmake/util/parse_ini_to_json.py /home/ma-user/AscendProjects/MyOperator/tbe/op_info_cfg/ai_core/ascend910/relu.ini  /home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg/packages/op_impl/custom/ai_core/tbe/config/aic-ascend910-ops-info.json
+2021-12-24 15:00:33 [ INFO ] ==============check valid for ops info start==============
+2021-12-24 15:00:33 [ INFO ] ==============check valid for ops info end================
+2021-12-24 15:00:33 [ INFO ] Compile op info cfg successfully.
+2021-12-24 15:00:33 [ INFO ] /home/ma-user/AscendProjects/MyOperator/tbe/op_info_cfg/ai_core /home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg/packages/framework/custom/tensorflow/
+2021-12-24 15:00:33 [ INFO ] [INFO] Succed generated /home/ma-user/AscendProjects/MyOperator/cmake-build/makepkg/packages/framework/custom/tensorflow//npu_supported_ops.json
+2021-12-24 15:00:33 [ INFO ] [ 20%] Built target config_json
+2021-12-24 15:00:33 [ INFO ] [ 40%] Linking CXX shared library ../../makepkg/packages/framework/custom/tensorflow/libcust_tf_parsers.so
+2021-12-24 15:00:33 [ INFO ] [ 60%] Built target cust_tf_parsers
+2021-12-24 15:00:33 [ INFO ] [ 80%] Linking CXX shared library ../makepkg/packages/op_proto/custom/libcust_op_proto.so
+2021-12-24 15:00:33 [ INFO ] [100%] Built target cust_op_proto
+2021-12-24 15:00:33 [ INFO ] /home/ma-user/AscendProjects/MyOperator/tbe/op_info_cfg/ai_core /home/ma-user/AscendProjects/MyOperator/cmake-build/framework/op_info_cfg/ai_core
+2021-12-24 15:00:33 [ INFO ] [INFO] Succed generated /home/ma-user/AscendProjects/MyOperator/cmake-build/framework/op_info_cfg/ai_core/npu_supported_ops.json
+2021-12-24 15:00:33 [ INFO ] Header is 671 lines long
+2021-12-24 15:00:33 [ WARN ] WARNING: Overwriting existing file: custom_opp_Linux_aarch64.run
+2021-12-24 15:00:33 [ INFO ] About to compress 152 KB of data...
+2021-12-24 15:00:33 [ INFO ] Adding files to archive named "custom_opp_Linux_aarch64.run"...
+2021-12-24 15:00:33 [ INFO ] ./help.sh
+2021-12-24 15:00:33 [ INFO ] ./install.sh
+2021-12-24 15:00:33 [ INFO ] ./packages/framework/custom/tensorflow/
+2021-12-24 15:00:33 [ INFO ] ./packages/framework/custom/tensorflow/npu_supported_ops.json
+2021-12-24 15:00:33 [ INFO ] ./packages/framework/custom/tensorflow/libcust_tf_parsers.so
+2021-12-24 15:00:33 [ INFO ] ./packages/framework/custom/tensorflow/libcust_tf_parsers.so
+2021-12-24 15:00:33 [ INFO ] ./packages/framework/custom/tensorflow/npu_supported_ops.json
+2021-12-24 15:00:33 [ INFO ] ./packages/fusion_rules/custom/
+2021-12-24 15:00:33 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/config/ascend910/
+2021-12-24 15:00:33 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/config/ascend910/aic-ascend910-ops-info.json
+2021-12-24 15:00:33 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/config/ascend910/aic-ascend910-ops-info.json
+2021-12-24 15:00:33 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/custom_impl/
+2021-12-24 15:00:33 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/custom_impl/sqrt.py
+2021-12-24 15:00:33 [ INFO ] ./packages/op_impl/custom/ai_core/tbe/custom_impl/sqrt.py
+2021-12-24 15:00:33 [ INFO ] ./packages/op_impl/custom/cpu/aicpu_kernel/custom_impl/
+2021-12-24 15:00:33 [ INFO ] ./packages/op_impl/custom/vector_core/tbe/custom_impl/
+2021-12-24 15:00:33 [ INFO ] ./packages/op_impl/custom/vector_core/tbe/custom_impl/sqrt.py
+2021-12-24 15:00:33 [ INFO ] ./packages/op_impl/custom/vector_core/tbe/custom_impl/sqrt.py
+2021-12-24 15:00:33 [ INFO ] ./packages/op_proto/custom/
+2021-12-24 15:00:33 [ INFO ] ./packages/op_proto/custom/libcust_op_proto.so
+2021-12-24 15:00:33 [ INFO ] ./packages/op_proto/custom/libcust_op_proto.so
+2021-12-24 15:00:33 [ INFO ] ./uninstall.sh
+2021-12-24 15:00:33 [ INFO ] ./upgrade.sh
+2021-12-24 15:00:33 [ INFO ] CRC: 3039487006
+2021-12-24 15:00:33 [ INFO ] SHA256: 7dc546269aad899804edff1a9c88d5479050a7793e3b41b4e3ba06b1358cdf7c
+2021-12-24 15:00:33 [ INFO ] Skipping md5sum at user request
+2021-12-24 15:00:33 [ INFO ] Self-extractable archive "custom_opp_Linux_aarch64.run" successfully created.
+2021-12-24 15:00:33 [ INFO ] [100%] Built target custom_opp_Linux_aarch64.run

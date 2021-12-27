@@ -1,0 +1,1 @@
+g++ -fPIC  -fstack-protector-all -fpic -fpie -D_FORTIFY_SOURCE=2 -O2  -Wl,-z,relro,-z,now -Wl,-z,noexecstack -pie -fvisibility=hidden -fvisibility-inlines-hidden -shared -Wl,-soname,libcust_op_proto.so -o ../makepkg/packages/op_proto/custom/libcust_op_proto.so CMakeFiles/cust_op_proto.dir/sqrt.cc.o /home/ma-user/Ascend/ascend-toolkit/5.0.2.1/atc/include/../lib64/libgraph.so 

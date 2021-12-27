@@ -1,0 +1,14 @@
+[
+	{
+		"name":"Build-Configuration",
+		"type":"",
+		"lastBuild":true,
+		"buildProperties":{
+			"HOST_OS":"Linux",
+			"OP_NAME_TOBEBUILD":"[{\"om_op_name\":\"\"}]",
+			"BUILD_MODE":"native",
+			"HOST_ARCH":"aarch64",
+			"remote_host":""
+		}
+	}
+]

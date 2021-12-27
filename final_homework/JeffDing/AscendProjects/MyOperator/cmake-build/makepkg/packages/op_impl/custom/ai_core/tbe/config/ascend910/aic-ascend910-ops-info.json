@@ -1,0 +1,22 @@
+{
+    "Relu":{
+        "input0":{
+            "dtype":"float,int32,int64,uint8,int16,int8,uint16,float16,uint32,uint64",
+            "format":"ND,ND,ND,ND,ND,ND,ND,ND,ND,ND",
+            "name":"x",
+            "paramType":"required"
+        },
+        "opFile":{
+            "value":"relu"
+        },
+        "opInterface":{
+            "value":"relu"
+        },
+        "output0":{
+            "dtype":"float,int32,int64,uint8,int16,int8,uint16,float16,uint32,uint64",
+            "format":"ND,ND,ND,ND,ND,ND,ND,ND,ND,ND",
+            "name":"y",
+            "paramType":"required"
+        }
+    }
+}
